@@ -1,0 +1,35 @@
+.aside{
+    .peliculas__aside{
+        display: flex;
+        flex-direction: column;
+        height: 97vh;
+        justify-content: space-around;
+        align-items: center;
+        .peliculas__aside__titulo{
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #FF2A34;
+            font-size: 250%;
+        }
+        .peliculas__aside__noticia{
+            background-color: #201A23;
+            width: 27vw;
+            padding: 2vh 2vw;
+            border-radius: 20px;
+            h2{
+                color: white;
+                text-align: justify;
+                font-size: large;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            p{
+                color: white;
+                text-align: justify;
+                font-size: 80%;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                margin: 7px;
+            }
+        }
+    }
+}

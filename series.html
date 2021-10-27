@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> <!--BOOTSTRAP-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Playfair+Display:wght@800&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <!--LINK AL CSS-->
+    <link rel="stylesheet" href="archivosCss/estiladoDos.css"> 
+    <!--ICONO DEL LA BARRA DE VENTANAS-->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <!--KEYWORDS-->
+    <meta name="keywords"  content="pelicula, series, netflix, prime video, disneyplus, que pelicula ver, que serie ver, lo mas visto, no se que mirar, lanzamientos, playlist">
+    <!--DESCRIPCION-->
+    <meta name="description" content="Encontra la series mas maratoneadas del momento">
+    <title>Series - Kiniere</title>
+</head>
+<body>
+    <div class="grid"> <!--GRID GENERAL-->
+        <header class="header"> <!--PRIMERA COLUMNA DEL GRID-->
+            <nav class="header__nav"> <!--BARRA DE NAVEGACION-->
+                <img src="img/K4.png" alt="KiniereLogo" class="header__nav__logo"> <!--LOGO-->
+                <div class="header__nav__list"> <!--ELEMENTOS DEL NAV-->
+                    <div class="header__nav__list__bg"> <!--INICIO--> 
+                        <a class="header__nav__list__link" href="index.html"> 
+                        <img class="header__nav__list__icon" src="img/home.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Inicio</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--MI LISTA-->    
+                        <a class="header__nav__list__link" href="miLista.html">
+                        <img class="header__nav__list__icon" src="img/list-interface-symbol.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Mi Lista</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--PELICULAS-->
+                        <a class="header__nav__list__link" href="peliculas.html">
+                        <img class="header__nav__list__icon" src="img/video-player.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Peliculas</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--SERIES-->
+                        <a class="header__nav__list__link" href="series.html">
+                        <img class="header__nav__list__icon" src="img/tv.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div> <!--IR A AJUSTES-->
+                    <div class="header__nav__list__bg"> 
+                        <a class="header__nav__list__link" href="ajustes.html">
+                        <img class="header__nav__list__icon" src="img/settings.png" alt="homeLogo">
+                        <p class="header__nav__list__text">Ajustes</p>
+                        </a>
+                    </div>                    
+                </div>                                
+            </nav>
+        </header>
+        <main class="main"> <!--SECCION DEL MEDIO-->
+            <div class="main__buscar"> <!--BUSCADOR-->
+                <input type="text" placeholder="Buscar" required>
+                <div class="main__buscar__btn"> <!--BOTON DEL BUSCADOR-->
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+            <div class="series__main"> <!--MAIN DE SERIES-->
+                <div class="series__main__area area__uno"> <!--PRIMERA AREA-->
+                    <div class="series__main__area__content">
+                        <img class="series__main__area__content__img" src="img/juegoDelCalamarBanner.jpeg" alt="juegoDelCalamarBanner"> <!--IMAGEN-->
+                        <div class="series__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=Mj4_xG5NXeo" target="blank"><h4 class="series__main__area__content__img__shadow__text">El Juego Del Calamar</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__main__area area__dos"> <!--DESCRIPCION DE LA SERIE-->
+                    <div class="series__main__area__content">
+                        <div class="series__main__area__content__descrip">
+                            <p>456 participantes desesperados compiten en un misterioso y mortífero concurso de supervivencia compuesto de varias rondas de juegos infantiles. ¿La meta? Ganar 45 600 millones de wones y salir de la miseria.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__main__area area__tres"> <!--SEGUNDA AREA-->
+                    <div class="series__main__area__content">
+                        <img class="series__main__area__content__img" src="img/misaDeMedianocheBanner.jpg" alt="misaDeMedianocheBanner"> <!--IMAGEN-->
+                        <div class="series__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=qe9cvYXySf0" target="blank"><h4 class="series__main__area__content__img__shadow__text">Misa De Medianoche</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__main__area area__cuatro"> <!--DESCRIPCION DE LA SERIE-->
+                    <div class="series__main__area__content">
+                        <div class="series__main__area__content__descrip">
+                            <p>Un relato ambientado en una pequeña comunidad isleña aislada donde las desavenencias existentes se intensifican con el regreso de un joven caído en desgracia y la llegada de un carismático sacerdote.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__main__area area__cinco"> <!--TERCER AREA-->
+                    <div class="series__main__area__content">
+                        <img class="series__main__area__content__img" src="img/laFortunaBanner.jpg" alt="duneBanner"> <!--IMAGEN-->
+                        <div class="series__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=UhNnKR9emkM" target="blank"><h4 class="series__main__area__content__img__shadow__text">La Fortuna</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="series__main__area area__seis"> <!--DESCRIPCION DE LA SERIE-->
+                    <div class="series__main__area__content">
+                        <div class="series__main__area__content__descrip">
+                            <p>Alex Ventura, un joven e inexperto diplomático, se ve convertido sin proponérselo en el líder de una misión que pondrá a prueba todas sus convicciones: recuperar el tesoro submarino robado por el aventurero Frank Wild.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="aside"> <!--SECCION DE LA DERECHA-->
+            <div class="series__aside">
+                <div> <!--TITULO DE LA SECCION-->
+                    <h1 class="series__aside__titulo">Proximos Estrenos</h1>
+                </div>
+                <!--PROXIMOS ESTRENOS-->
+                <div class="series__aside__noticia">
+                    <h2>La Rueda del Tiempo</h2>
+                    <p>19 de noviembre de 2021 en Amazon Prime Video</p>
+                </div>
+                <div class="series__aside__noticia">
+                    <h2>Ojo de Halcón</h2>
+                    <p>24 de noviembre de 2021 en Disney+</p>
+                </div>
+                <div class="series__aside__noticia">
+                    <h2>Chucky</h2>
+                    <p>12 de octubre de 2021 en SyFy US</p>
+                </div>
+                <div class="series__aside__noticia">
+                    <h2>El Señor de los Anillos</h2>
+                    <p>2 de septiembre de 2022 en Amazon Prime Video</p>
+                </div>
+                <div class="series__aside__noticia">
+                    <h2>Invasión</h2>
+                    <p>22 de octubre de 2021 en Apple TV+</p>
+                </div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

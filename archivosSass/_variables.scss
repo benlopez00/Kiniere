@@ -1,0 +1,36 @@
+// 3 bloques del desafio de la clase 12
+$sizeAbsolutoTexto: 40px;
+$colorOscuroNivelUno: #201A23 /*white*/;
+@mixin controlFlex ($display, $direction, $justifyContent, $alignItems) {
+    display: $display;
+    flex-direction: $direction;
+    justify-content: $justifyContent;
+    align-items: $alignItems;
+}
+// mixin del desafio complementario
+@mixin areasMain {
+    @each $numero in uno, dos, tres, cuatro, cinco, seis {
+        .area__#{$numero}{
+            grid-area: canal__#{$numero}
+        }
+    }
+}
+// Resultado tiene que ser asi:
+//    .area__uno{
+//        grid-area: canal__uno
+//    }
+//    .area__dos{
+//        grid-area: canal__dos
+//    }
+//    .area__tres{
+//        grid-area: canal__tres
+//    }
+//    .area__cuatro{
+//        grid-area: canal__cuatro
+//    }
+//    .area__cinco{
+//        grid-area: canal__cinco
+//    }
+//    .area__seis{
+//        grid-area: canal__seis
+//    }

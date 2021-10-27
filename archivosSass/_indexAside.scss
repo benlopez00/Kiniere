@@ -1,0 +1,42 @@
+@import "variables";
+.aside{
+    .index__aside{
+        @include controlFlex(flex, column, space-around, center);
+        height: 97vh;
+        .index__aside__titulo{
+            font-family: 'Playfair Display', serif;
+            font-weight: 700;
+            color: #FF2A34;
+            font-size: $sizeAbsolutoTexto;
+        }
+        .index__aside__noticia{
+            background-color: $colorOscuroNivelUno;
+            width: 27vw;
+            padding: 2vh 2vw;
+            border-radius: 20px;
+            h2{
+                @if $colorOscuroNivelUno == #201A23{
+                    color: white;
+                }
+                @else if $colorOscuroNivelUno == white{
+                    color: black;
+                }
+                text-align: justify;
+                font-size: $sizeAbsolutoTexto/2.5;
+                font-family: 'Ubuntu', sans-serif;
+            }
+            p{
+                @if $colorOscuroNivelUno == #201A23{
+                    color: white;
+                }
+                @else if $colorOscuroNivelUno == white{
+                    color: black;
+                }
+                text-align: justify;
+                font-family: 'Open Sans', sans-serif;
+                font-size: $sizeAbsolutoTexto/3.5;
+                margin: 7px;
+            }
+        }
+    }
+}

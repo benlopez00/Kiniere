@@ -1,0 +1,32 @@
+.main{
+    .ajustes__main{
+        .ajustes__main__titulo{
+            text-align: justify;
+            font-size: 200%;
+            font-family: 'Ubuntu', sans-serif;
+            color: white;
+            margin-left: 2vw;
+        }
+        .ajustes__main__seccion{
+            background-color: #201A23;
+            padding: 2vh 2vw;
+            border-radius: 25px;
+            margin: 5vh 0;
+            .ajustes__main__seccion__nombre{
+                margin: 10px;
+                color: white;
+                text-align: justify;
+                font-size: large;
+                font-family: 'Ubuntu', sans-serif
+            }
+            .btn-outline-primary{
+                background-color: #413446;
+                color: #0d6efd;
+            }
+            .btn-outline-danger{
+                background: none;
+                color: #dc3545;
+            }
+        }
+    }
+}

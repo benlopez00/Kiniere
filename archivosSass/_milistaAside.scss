@@ -1,0 +1,22 @@
+.aside{
+    .milista__aside{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: center;
+        height: 100vh;
+        .milista__aside__video{
+            width: 30vw;
+            height: 30vh;
+        }
+        .milista__aside__video__estilo{
+            width: 30vw;
+            height: 30vh;
+        }
+        h1{
+            font-family: 'Playfair Display', serif;
+            color: #FF2A34;
+            font-size: 250%;
+        }
+    }
+}

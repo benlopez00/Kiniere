@@ -1,0 +1,50 @@
+.aside{
+    .ajustes__aside{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-around;
+        height: 97vh;
+        .ajustes__aside__seccion{
+            display: flex;
+            justify-content: space-around;
+            flex-direction: column;
+            background-color: #201A23;
+            width: 25vw;
+            padding: 2vh 2vw;
+            border-radius: 25px;
+            .ajustes__aside__seccion__nombre{
+                margin: 10px;
+                color: white;
+                text-align: justify;
+                font-size: large;
+                font-family: 'Ubuntu', sans-serif
+            }
+            ul{
+                list-style-position: inside;
+            }
+            li{
+                margin: 10px;
+                color: white;
+                font-size: 80%;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+            }
+        }
+        .dropdown-menu{
+            display: inline-block;
+            position: relative;
+            width: 25vw;
+            border-radius: 10%;
+            .btn-primary{
+                width: 10vw;
+                font-size: medium;
+                border-radius: 10px;
+                background-color: #413446;
+            }
+            .dropdown-item{
+                border-radius: 0 0 27px 27px;
+            }
+        }
+    }
+}

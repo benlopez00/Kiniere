@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> <!--BOOTSTRAP-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Playfair+Display:wght@800&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <!--LINK AL CSS-->
+    <link rel="stylesheet" href="archivosCss/estiladoDos.css"> 
+    <!--ICONO DEL LA BARRA DE VENTANAS-->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon"> 
+    <!--KEYWORDS-->
+    <meta name="keywords"  content="pelicula, series, netflix, prime video, disneyplus, que pelicula ver, que serie ver, lo mas visto, no se que mirar, lanzamientos, playlist">
+    <!--DESCRIPCION-->
+    <meta name="description" content="Configura Kiniere para recibir recomendaciones segun tus gustos">
+    <title>Ajustes - Kiniere</title>
+</head>
+<body>
+    <div class="grid"> <!--GRID GENERAL-->
+        <header class="header"> <!--PRIMERA COLUMNA DEL GRID-->
+            <nav class="header__nav"> <!--BARRA DE NAVEGACION-->
+                <img src="img/K4.png" alt="KiniereLogo" class="header__nav__logo"> <!--LOGO-->
+                <div class="header__nav__list"> <!--ELEMENTOS DEL NAV-->
+                    <div class="header__nav__list__bg"> <!--INICIO--> 
+                        <a class="header__nav__list__link" href="index.html"> 
+                        <img class="header__nav__list__icon" src="img/home.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Inicio</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--MI LISTA-->    
+                        <a class="header__nav__list__link" href="miLista.html">
+                        <img class="header__nav__list__icon" src="img/list-interface-symbol.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Mi Lista</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--PELICULAS-->
+                        <a class="header__nav__list__link" href="peliculas.html">
+                        <img class="header__nav__list__icon" src="img/video-player.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Peliculas</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--SERIES-->
+                        <a class="header__nav__list__link" href="series.html">
+                        <img class="header__nav__list__icon" src="img/tv.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div> <!--IR A AJUSTES-->
+                    <div class="header__nav__list__bg"> 
+                        <a class="header__nav__list__link" href="ajustes.html">
+                        <img class="header__nav__list__icon" src="img/settings.png" alt="homeLogo">
+                        <p class="header__nav__list__text">Ajustes</p>
+                        </a>
+                    </div>                    
+                </div>                                
+            </nav>
+        </header>
+        <main class="main"> <!--SECCION DEL MEDIO-->
+            <div class="main__buscar"> <!--BUSCADOR-->
+                <input type="text" placeholder="Buscar" required>
+                <div class="main__buscar__btn"> <!--BOTON DEL BUSCADOR-->
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+            <div class="ajustes__main container"> <!--SECCION AJUSTES-->
+                <div class="row">
+                    <h1 class="ajustes__main__titulo .col-md-12-offset">
+                        Configuracion de la cuenta
+                    </h1>
+                </div>
+                <div class="ajustes__main__seccion row container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2 class="ajustes__main__seccion__nombre">
+                            A que grupo pertenece el menor de edad?
+                        </h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12 btn-group" role="group" aria-label="Basic outlined example">
+                        <button type="button" class="btn btn-outline-primary">Infante</button>
+                        <button type="button" class="btn btn-outline-primary">Adolescente</button>
+                        <button type="button" class="btn btn-outline-primary">Adulto</button>
+                    </div>
+                </div>
+                <div  class="ajustes__main__seccion row">
+                    <div class="col-md-2 col-sm-12">
+                        <h2 class="ajustes__main__seccion__nombre">
+                            Bloquea generos
+                        </h2>
+                    </div>
+                    <div id="generos" class="col-md-10 col-sm-12 btn-group" role="group" aria-label="Basic checkbox toggle button group">
+                        <input type="checkbox" class="btn-check" id="btncheck1" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck1">Accion</label>
+                        <input type="checkbox" class="btn-check" id="btncheck2" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck2">Animado</label>
+                        <input type="checkbox" class="btn-check" id="btncheck3" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck3">Aventura</label>
+                        <input type="checkbox" class="btn-check" id="btncheck4" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck4">Humor</label>
+                        <input type="checkbox" class="btn-check" id="btncheck5" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck5">Terror</label>
+                        <input type="checkbox" class="btn-check" id="btncheck6" autocomplete="off">
+                        <label class="btn btn-outline-primary" for="btncheck6">Romantico</label>
+                    </div>
+                </div>
+                <div class="ajustes__main__seccion row">
+                    <div class="col-md-2 col-sm-12">
+                        <h2 class="ajustes__main__seccion__nombre">
+                            Otros
+                        </h2>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <button type="button" class="btn btn-outline-primary">Contribuciones</button>
+                    </div>
+                    <div class="col-md-5 col-sm-12">
+                        <button type="button" class="btn btn-outline-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">Eliminar Cuenta</button>
+                            <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                                <div class="modal-dialog">
+                                <div class="modal-content">
+                                    <div class="modal-header">
+                                    <h5 class="modal-title" id="exampleModalLabel">Confirmar Eliminacion</h5>
+                                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                                    </div>
+                                    <div class="modal-body">
+                                    Estas seguro que quieres eliminar tu cuenta?
+                                    </div>
+                                    <div class="modal-footer">
+                                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Cancelar</button>
+                                    <button type="button" class="btn btn-outline-danger">Eliminar</button>
+                                    </div>
+                                </div>
+                                </div>
+                            </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="aside"> <!--SECCION DE LA DERECHA-->
+            <div class="ajustes__aside">
+                <div class="ajustes__aside__seccion">
+                    <h2 class="ajustes__aside__seccion__nombre">
+                        ¿Problemas?
+                    </h2>
+                    <ul>
+                        <li>FAQ</li>
+                        <li>Contacto</li>
+                    </ul>
+                </div> 
+                <div class="dropdown-menu">
+                        <form class="px-4 py-3">
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormEmail1" class="form-label">Correo Electronico</label>
+                            <input type="email" class="form-control" id="exampleDropdownFormEmail1" placeholder="email@example.com">
+                        </div>
+                        <div class="mb-3">
+                            <label for="exampleDropdownFormPassword1" class="form-label">Contraseña</label>
+                            <input type="password" class="form-control" id="exampleDropdownFormPassword1" placeholder="Password">
+                        </div>
+                        <div class="mb-3">
+                            <div class="form-check">
+                            <input type="checkbox" class="form-check-input" id="dropdownCheck">
+                            <label class="form-check-label" for="dropdownCheck">
+                                Mantener Sesion Iniciada
+                            </label>
+                            </div>
+                        </div>
+                        <button type="submit" class="btn btn-primary">Iniciar Sesion</button>
+                        </form>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="#">Eres Nuevo? Registrate</a>
+                        <a class="dropdown-item" href="#">Te olvidaste tu contraseña?</a>
+                </div>
+            </div> 
+        </aside>
+        <footer class="footer">
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+    <link rel="preconnect" href="https://fonts.googleapis.com"><!--FUENTES-->
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-uWxY/CJNBR+1zjPWmfnSnVxwRheevXITnMqoEIeG1LJrdI0GlVs/9cVSyPYXdcSF" crossorigin="anonymous"> <!--BOOTSTRAP-->
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500;700&family=Playfair+Display:wght@800&family=Ubuntu:wght@700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/712575d4a5.js" crossorigin="anonymous"></script>
+    <!--LINK AL CSS-->
+    <link rel="stylesheet" href="archivosCss/estiladoDos.css"> 
+    <!--ICONO DEL LA BARRA DE VENTANAS-->
+    <link rel="shortcut icon" href="img/favicon-32x32.png" type="image/x-icon">
+    <!--KEYWORDS-->
+    <meta name="keywords"  content="pelicula, series, netflix, prime video, disneyplus, que pelicula ver, que serie ver, lo mas visto, no se que mirar, lanzamientos, playlist">
+    <!--DESCRIPCION-->
+    <meta name="description" content="Conoce las peliculas mas populares del momento">
+    <title>Peliculas - Kiniere</title>
+</head>
+<body>
+    <div class="grid"> <!--GRID GENERAL-->
+        <header class="header"> <!--PRIMERA COLUMNA DEL GRID-->
+            <nav class="header__nav"> <!--BARRA DE NAVEGACION-->
+                <img src="img/K4.png" alt="KiniereLogo" class="header__nav__logo"> <!--LOGO-->
+                <div class="header__nav__list"> <!--ELEMENTOS DEL NAV-->
+                    <div class="header__nav__list__bg"> <!--INICIO--> 
+                        <a class="header__nav__list__link" href="index.html"> 
+                        <img class="header__nav__list__icon" src="img/home.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Inicio</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--MI LISTA-->    
+                        <a class="header__nav__list__link" href="miLista.html">
+                        <img class="header__nav__list__icon" src="img/list-interface-symbol.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Mi Lista</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--PELICULAS-->
+                        <a class="header__nav__list__link" href="peliculas.html">
+                        <img class="header__nav__list__icon" src="img/video-player.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Peliculas</p>
+                        </a>
+                    </div>
+                    <div class="header__nav__list__bg"> <!--SERIES-->
+                        <a class="header__nav__list__link" href="series.html">
+                        <img class="header__nav__list__icon" src="img/tv.png" alt="homeLogo"> <!--ICONO-->
+                        <p class="header__nav__list__text">Series</p>
+                        </a>
+                    </div>
+                </div>
+                <div> <!--IR A AJUSTES-->
+                    <div class="header__nav__list__bg"> 
+                        <a class="header__nav__list__link" href="ajustes.html">
+                        <img class="header__nav__list__icon" src="img/settings.png" alt="homeLogo">
+                        <p class="header__nav__list__text">Ajustes</p>
+                        </a>
+                    </div>                    
+                </div>                                
+            </nav>
+        </header>
+        <main class="main"> <!--SECCION DEL MEDIO-->
+            <div class="main__buscar"> <!--BUSCADOR-->
+                <input type="text" placeholder="Buscar" required>
+                <div class="main__buscar__btn"> <!--BOTON DEL BUSCADOR-->
+                    <i class="fas fa-search icon"></i>
+                </div>
+            </div>
+            <div class="peliculas__main"> <!--MAIN DE PELICULAS-->
+                <div class="peliculas__main__area area__uno"> <!--PRIMER AREA-->
+                    <div class="peliculas__main__area__content">
+                        <img class="peliculas__main__area__content__img" src="img/noTimeToDieBanner.jpg" alt="noTimeToDieBanner"> <!--IMAGEN-->
+                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=N_gD9-Oa0fg" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">007 No Time To Die</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="peliculas__main__area area__dos"> <!--DESCRIPCION DE LA PELICULA-->
+                    <div class="peliculas__main__area__content">
+                        <div class="peliculas__main__area__content__descrip">
+                            <p>Bond ha dejado el servicio. Su recién encontrada paz es interrumpida por una visita de su amigo de la CIA Felix Leiter. Bond y Leiter le siguen la pista a un misterioso villano en posesión de peligrosas nuevas tecnologías.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="peliculas__main__area area__tres"> <!--SEGUNDA AREA-->
+                    <div class="peliculas__main__area__content">
+                        <img class="peliculas__main__area__content__img" src="img/guiltyBanner.jpg" alt="guiltyBanner"> <!--IMAGEN-->
+                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=Se-sQCcyEbE" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">Culpable</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="peliculas__main__area area__cuatro"> <!--DESCRIPCION DE LA PELICULA-->
+                    <div class="peliculas__main__area__content">
+                        <div class="peliculas__main__area__content__descrip">
+                            <p>Múltiples incendios asolan Los Ángeles una tensa mañana en el centro de llamadas del 911. El operador Joe Baylor intenta salvar a una mujer en peligro, pero pronto descubre que nada es lo que parece y ha de afrontar la verdad.</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="peliculas__main__area area__cinco"> <!--TERCER AREA-->
+                    <div class="peliculas__main__area__content">
+                        <img class="peliculas__main__area__content__img" src="img/duneBanner.jpg" alt="duneBanner"> <!--IMAGEN-->
+                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                            <a href="https://www.youtube.com/watch?v=8g18jFHCLXk" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">Duna</h4></a>
+                        </div>
+                    </div>
+                </div>
+                <div class="peliculas__main__area area__seis"> <!--DESCRIPCION DE LA PELICULA-->
+                    <div class="peliculas__main__area__content">
+                        <div class="peliculas__main__area__content__descrip">
+                            <p>Adaptación de la novela de ciencia ficción de Frank Herbert sobre el hijo de una familia noble que trata de vengarse de la muerte de su padre y al mismo tiempo salvar un planeta que se le ha encomendado proteger.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </main>
+        <aside class="aside"> <!--SECCION DE LA DERECHA-->
+            <div class="peliculas__aside">
+                <div> <!--TITULO DE LA SECCION-->
+                    <h1 class="peliculas__aside__titulo">Proximos Estrenos</h1>
+                </div>
+                <!--PROXIMOS ESTRENOS-->
+                <div class="peliculas__aside__noticia">
+                    <h2>Venom: Habrá Matanza</h2>
+                    <p>15 de octubre de 2021</p>
+                </div>
+                <div class="peliculas__aside__noticia">
+                    <h2>La familia Addams 2: La gran escapada</h2>
+                    <p>8 de octubre de 2021</p>
+                </div>
+                <div class="peliculas__aside__noticia">
+                    <h2>Spider-Man: No Way Home</h2>
+                    <p>17 de diciembre de 2021</p>
+                </div>
+                <div class="peliculas__aside__noticia">
+                    <h2>Hotel Transilvania: Transformanía</h2>
+                    <p>2021</p>
+                </div>
+                <div class="peliculas__aside__noticia">
+                    <h2>Querido Evan Hansen</h2>
+                    <p>29 de octubre de 2021</p>
+                </div>
+            </div>
+        </aside>
+        <footer class="footer">
+            <p>Todos los derechos reservados</p>
+        </footer>
+    </div>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-kQtW33rZJAHjgefvhyyzcGF3C5TFyBQBA13V1RKPf4uH+bwyzQxZ6CmMZHmNBEfJ" crossorigin="anonymous"></script>
+</body>
+</html>

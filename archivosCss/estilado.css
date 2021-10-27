@@ -1,0 +1,440 @@
+/*
+FUENTES Y COLORES
+font-family: 'Open Sans', sans-serif;
+font-family: 'Ubuntu', sans-serif;
+font-family: 'Playfair Display', serif;
+
+#413446
+#2B232F
+#2E2532
+#201A23
+#ff2a34
+
+*/
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.grid{
+    display: grid;
+    grid-template-areas: 
+    "headerGrid seccionUno seccionDos"
+    "headerGrid pie pie";
+    grid-template-columns: 3fr 11fr 6fr;
+    grid-template-rows: 97vh 3vh;
+}
+
+/*HEADER*/
+.headerGrid{
+    background-color: #413446;
+    grid-area: headerGrid;
+}
+.pieDePagina{
+    grid-area: pie;
+    background-color: #2E2532;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.pieDePagina p{
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    color: white;
+}
+
+/*NAV*/
+.navegador{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    height: 100vh;
+}
+.logoHeader{
+    width: 60px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 10px;
+    border-radius: 30%;
+}
+
+/*ELEMENTOS DEL NAV*/
+.listaHeader{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.fondoElementosListas{
+    width: 10vw;
+    height: 40px;
+    margin: 2vh auto;
+    background-color: #2B232F;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fondoElementosListas:hover{
+    background-color: #ff2a34;
+    transition: all 0.5s;
+}
+
+/*LINKS EN LOS ELEMENTOS*/
+.elementoListaHeader{
+    display: flex;
+    flex-direction: row;
+    text-decoration: none;
+    align-items: center;
+}
+
+/*ICONO DE LOS LINK*/
+.iconoListaHeader{
+    width: 1.5em;
+    height: 1.5em;
+    margin-left: 1vw;
+}
+
+/*TEXTO DE LOS LINK*/
+.headerP{
+    display: inline-block;
+    margin-left: 1vw;
+    margin-bottom: 0;
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: 700;
+    color:white;
+}
+
+
+/*SECCION DEL MEDIO*/
+.seccionUno{
+    background-color: #2E2532;
+    grid-area: seccionUno;
+}
+
+/*BARRA DE BUSQUEDA*/
+.buscar{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    padding: 1.5vh;
+}
+.buscar input{
+    width: 30vw;
+    height: 5.5vh;
+    padding: 0 20px;
+    font-size: 18px;
+    color: black;
+    outline: none;
+    border: 1px solid silver;
+    border-radius: 10px;
+}
+.btnBuscar{
+    right: 0;
+    background: #ff2a34;
+    width: 50px;
+    height: 7vh;
+    line-height: 50px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-size: 20px;
+    border-radius: 30%;
+    cursor: pointer;
+}
+
+
+/*SECCION DEL MEDIO DE INDEX, MI LISTA, PELICULAS Y SERIES*/
+.indexMain{
+    display: grid;
+    grid-template-areas: 
+    "canalUno canalDos"
+    "canalTres canalCuatro"
+    "canalCinco canalSeis";
+    grid-template-columns: 23vw 23vw;
+    grid-template-rows: 25vh 25vh 25vh;
+    padding: 2vh 3vw 2vh 3vw;
+    grid-column-gap: 3vw;
+    grid-row-gap: 4vh;
+}
+.fondoCanal{
+    width: 23vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.imagenFondo{
+    width: 23vw;
+    height: 25vh;
+    margin: 0;
+    border-radius: 25px;
+    position: relative;
+}
+.sombraCanal{
+    position: absolute;
+    width: 23vw;
+    height: 25vh;
+    background-color: rgba(0, 0, 0, 0.801);
+    border-radius: 25px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    color: aliceblue;
+}
+.tituloCanal{
+    text-decoration: none;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+    color: rgb(255, 255, 255);
+}
+.fondoCanal:hover > .sombraCanal{
+    display: flex;
+}
+
+
+/*SECCION DE LA DERECHA DE INDEX*/
+.seccionDos{
+    background-color: #2E2532;
+    grid-area: seccionDos;
+}
+.noticias{
+    display: flex;
+    flex-direction: column;
+    height: 97vh;
+    justify-content: space-around;
+    align-items: center;
+}
+.tituloSeccionDos{
+    font-family: 'Playfair Display', serif;
+    font-weight: 700;
+    color: #FF2A34;
+    font-size: 250%;
+}
+.sectorNoticias{
+    background-color: #201A23;
+    width: 27vw;
+    padding: 2vh 2vw;
+    border-radius: 20px;
+}
+.sectorNoticias h2{
+    color: white;
+    text-align: justify;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+}
+.sectorNoticias p{
+    color: white;
+    text-align: justify;
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+    margin: 7px;
+}
+
+/*SECCION DEL MEDIO MI LISTA*/
+.agregarCanal{
+    width: 23vw;
+    height: 25vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid white;
+    border-radius: 25px;
+}
+.imagenAgregarCanal{
+    width: 3em;
+}
+/*SECCION DE LA DERECHA DE MI LISTA*/
+#ayudaTrailers{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+    height: 100vh;
+}
+#ayudaTrailers h1{
+    font-family: 'Playfair Display', serif;
+    color: #FF2A34;
+    font-size: 250%;
+}
+.estiloVideo{
+    width: 30vw;
+    height: 30vh;
+}
+.video{
+    width: 30vw;
+    height: 30vh;
+}
+
+/*PELICULAS y SERIES*/
+.descripcionPeliculaYSeries{
+    background-color: #201A23;
+    width: 23vw;
+    height: 25vh;
+    padding: 2vh 2vw;
+    border-radius: 25px;
+}
+.descripcionPeliculaYSeries p{
+    color: white;
+    text-align: justify;
+    font-size: 100%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+}
+
+/*SECCION DEL MEDIO DE AJUSTES*/
+.mainAjustes h1{
+    text-align: justify;
+    font-size: 200%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin-left: 2vw;
+}
+.seccionAjustes{
+    background-color: #201A23;
+    padding: 2vh 2vw;
+    border-radius: 25px;
+    margin: 5vh 0;
+}
+.seccionAjustes p{
+    color: white;
+    margin: 0;
+}
+.seccionAjustes ul{
+    list-style-position: inside;
+}
+.seccionAjustes h2, li{
+    margin: 10px;
+    color: white;
+}
+.seccionAjustes h2{
+    text-align: justify;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif
+}
+.seccionAjustes li{
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;    
+}
+.btn-outline-primary{
+    background-color: #413446;
+    color: #0d6efd;
+}
+.btn-outline-danger{
+    background: none;
+    color: #dc3545;
+}
+/*aside DE AJUSTES*/
+.asideAjustes{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-around;
+    height: 97vh;
+}
+.seccionAjustesDos{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    background-color: #201A23;
+    width: 25vw;
+    padding: 2vh 2vw;
+    border-radius: 25px;
+}
+.dropdown-menu{
+    display: inline-block;
+    position: relative;
+    width: 25vw;
+    border-radius: 10%;
+}
+.btn-primary{
+    width: 10vw;
+    font-size: medium;
+    border-radius: 10px;
+    background-color: #413446;
+}
+.dropdown-item{
+    border-radius: 0 0 27px 27px;
+}
+.seccionAjustesDos ul{
+    list-style-position: inside;
+}
+.seccionAjustesDos h2, li{
+    margin: 10px;
+    color: white;
+}
+.seccionAjustesDos h2{
+    text-align: justify;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif
+}
+.seccionAjustesDos li{
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;    
+}
+
+
+
+
+
+
+@media (max-width: 900px){
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "headerGrid" 
+        "seccionUno" 
+        "seccionDos" 
+        "pie";
+        grid-template-columns: 1fr;
+        grid-template-rows: 15vh 95vh 95vh 5vh;
+    }
+    #navegador{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        height: 15vh;
+    }
+    #logoHeader{
+        width: 90px;
+        margin: 10px auto;
+        border-radius: 30%;
+    }
+    .listaHeader{
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+    }
+    .fondoElementosListas{
+        width: 15vw;
+        height: 40px;
+        margin: auto 1vw;
+        background-color: #2B232F;
+        border-radius: 10px;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+    }
+    .seccionAjustesDos{
+        display: flex;
+        justify-content: space-around;
+        flex-direction: column;
+        background-color: #201A23;
+        width: 90vw;
+        padding: 2vh 2vw;
+        border-radius: 25px;
+    }
+    .dropdown-menu{
+        display: inline-block;
+        position: relative;
+        width: 90vw;
+        border-radius: 20px;
+    }
+}

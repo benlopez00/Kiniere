@@ -1,0 +1,72 @@
+@import "variables";
+.main{
+    .index__main{
+        display: grid;
+        grid-template-areas: 
+        "canal__uno canal__dos"
+        "canal__tres canal__cuatro"
+        "canal__cinco canal__seis";
+        grid-template-columns: 23vw 23vw;
+        grid-template-rows: 25vh 25vh 25vh;
+        padding: 2vh 3vw 2vh 3vw;
+        grid-column-gap: 3vw;
+        grid-row-gap: 4vh;
+        .index__main__area{
+            .index__main__area__content{
+                width: 23vw;
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .index__main__area__content__img{
+                    width: 23vw;
+                    height: 25vh;
+                    margin: 0;
+                    border-radius: 25px;
+                    position: relative;
+                }
+                .index__main__area__content__img__shadow{
+                    position: absolute;
+                    width: 23vw;
+                    height: 25vh;
+                    background-color: rgba(0, 0, 0, 0.801);
+                    border-radius: 25px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    color: aliceblue;
+                    a{
+                        .index__main__area__content__img__shadow__text{
+                            text-decoration: none;
+                            font-family: 'Open Sans', sans-serif;
+                            font-size: $sizeAbsolutoTexto/1.5;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+            }
+            .index__main__area__content:hover > .index__main__area__content__img__shadow{
+                display: flex;
+            }
+        }
+        @include areasMain;
+        /*.area__uno{
+            grid-area: canal__uno
+        }
+        .area__dos{
+            grid-area: canal__dos
+        }
+        .area__tres{
+            grid-area: canal__tres
+        }
+        .area__cuatro{
+            grid-area: canal__cuatro
+        }
+        .area__cinco{
+            grid-area: canal__cinco
+        }
+        .area__seis{
+            grid-area: canal__seis
+        }*/
+    }
+}

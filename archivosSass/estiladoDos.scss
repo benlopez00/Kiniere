@@ -1,0 +1,47 @@
+@import "nav";
+@import "barraBusqueda";
+@import "indexMain";
+@import "indexAside";
+@import "milistaMain";
+@import "milistaAside";
+@import "peliculasMain";
+@import "peliculasAside";
+@import "seriesMain";
+@import "seriesAside";
+@import "ajustesMain";
+@import "ajustesAside";
+body{
+    .grid{
+        display: grid;
+        grid-template-areas: 
+        "headerGrid seccionUno seccionDos"
+        "headerGrid pie pie";
+        grid-template-columns: 3fr 11fr 6fr;
+        grid-template-rows: 97vh 3vh;
+        .header{
+            background-color: #413446;
+            grid-area: headerGrid;
+        }
+        .main{
+            background-color: #2E2532;
+            grid-area: seccionUno;
+        }
+        .aside{
+            background-color: #2E2532;
+            grid-area: seccionDos;
+        }
+        .footer{
+            grid-area: pie;
+            background-color: #2E2532;
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            p{
+                font-size: 80%;
+                font-family: 'Open Sans', sans-serif;
+                font-weight: 300;
+                color: white;
+            }
+        }
+    }
+}

@@ -1,0 +1,85 @@
+.main{
+    .series__main{
+        display: grid;
+        grid-template-areas: 
+        "canalUno canalDos"
+        "canalTres canalCuatro"
+        "canalCinco canalSeis";
+        grid-template-columns: 23vw 23vw;
+        grid-template-rows: 25vh 25vh 25vh;
+        padding: 2vh 3vw 2vh 3vw;
+        grid-column-gap: 3vw;
+        grid-row-gap: 4vh;
+        .series__main__area{
+            .series__main__area__content{
+                width: 23vw;
+                height: 25vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                .series__main__area__content__img{
+                    width: 23vw;
+                    height: 25vh;
+                    margin: 0;
+                    border-radius: 25px;
+                    position: relative;
+                }
+                .series__main__area__content__img__shadow{
+                    position: absolute;
+                    width: 23vw;
+                    height: 25vh;
+                    background-color: rgba(0, 0, 0, 0.801);
+                    border-radius: 25px;
+                    display: none;
+                    justify-content: center;
+                    align-items: center;
+                    color: aliceblue;
+                    a{
+                        .series__main__area__content__img__shadow__text{
+                            text-decoration: none;
+                            font-family: 'Open Sans', sans-serif;
+                            font-weight: 700;
+                            color: rgb(255, 255, 255);
+                        }
+                    }
+                }
+                .series__main__area__content__descrip{
+                background-color: #201A23;
+                width: 23vw;
+                height: 25vh;
+                padding: 2vh 2vw;
+                border-radius: 25px;
+                p{
+                    color: white;
+                    text-align: justify;
+                    font-size: 100%;
+                    font-family: 'Open Sans', sans-serif;
+                    font-weight: 300;
+                }
+                }
+            }
+            .series__main__area__content:hover > .series__main__area__content__img__shadow{
+                display: flex;
+            }
+            
+        }
+        .area__uno{
+            grid-area: canalUno
+        }
+        .area__dos{
+            grid-area: canalDos
+        }
+        .area__tres{
+            grid-area: canalTres
+        }
+        .area__cuatro{
+            grid-area: canalCuatro
+        }
+        .area__cinco{
+            grid-area: canalCinco
+        }
+        .area__seis{
+            grid-area: canalSeis
+        }
+    }
+}

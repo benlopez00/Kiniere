@@ -1,0 +1,84 @@
+.header{
+    .header__nav{
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        height: 100vh;
+        .header__nav__logo{
+            width: 60px;
+            margin-left: auto;
+            margin-right: auto;
+            margin-top: 10px;
+            border-radius: 30%;
+        }
+        .header__nav__list{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            .header__nav__list__bg{
+                width: 10vw;
+                height: 40px;
+                margin: 2vh auto;
+                background-color: #2B232F;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .header__nav__list__link{
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    align-items: center;
+                }
+                .header__nav__list__icon{
+                    width: 1.5em;
+                    height: 1.5em;
+                    margin-left: 1vw;
+                }
+                .header__nav__list__text{
+                    display: inline-block;
+                    margin-left: 1vw;
+                    margin-bottom: 0;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-weight: 700;
+                    color:white;
+                }
+            }
+            .header__nav__list__bg:hover{
+                background-color: #ff2a34;
+                transition: all 0.5s;
+            }
+        }
+        div{
+            .header__nav__list__bg{
+                width: 10vw;
+                height: 40px;
+                margin: 2vh auto;
+                background-color: #2B232F;
+                border-radius: 10px;
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                .header__nav__list__link{
+                    display: flex;
+                    flex-direction: row;
+                    text-decoration: none;
+                    align-items: center;
+                }
+                .header__nav__list__icon{
+                    width: 1.5em;
+                    height: 1.5em;
+                    margin-left: 1vw;
+                }
+                .header__nav__list__text{
+                    display: inline-block;
+                    margin-left: 1vw;
+                    margin-bottom: 0;
+                    font-family: 'Ubuntu', sans-serif;
+                    font-weight: 700;
+                    color:white;
+                }
+            }
+        }
+    }
+}
