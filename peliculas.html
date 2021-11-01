@@ -20,37 +20,51 @@
     <title>Peliculas - Kiniere</title>
 </head>
 <body>
-    <div class="grid"> <!--GRID GENERAL-->
-        <header class="header"> <!--PRIMERA COLUMNA DEL GRID-->
-            <nav class="header__nav"> <!--BARRA DE NAVEGACION-->
-                <img src="img/K4.png" alt="KiniereLogo" class="header__nav__logo"> <!--LOGO-->
-                <div class="header__nav__list"> <!--ELEMENTOS DEL NAV-->
-                    <div class="header__nav__list__bg"> <!--INICIO--> 
+    <!--GRID GENERAL-->
+    <div class="grid"> 
+        <!--PRIMERA COLUMNA DEL GRID-->
+        <header class="header"> 
+            <!--BARRA DE NAVEGACION-->
+            <nav class="header__nav"> 
+                <!--LOGO-->
+                <img src="img/K4.png" alt="KiniereLogo" class="header__nav__logo"> 
+                <!--ELEMENTOS DEL NAV-->
+                <div class="header__nav__list"> 
+                    <!--INICIO--> 
+                    <div class="header__nav__list__bg"> 
                         <a class="header__nav__list__link" href="index.html"> 
-                        <img class="header__nav__list__icon" src="img/home.png" alt="homeLogo"> <!--ICONO-->
+                        <!--ICONO-->
+                        <img class="header__nav__list__icon" src="img/home.png" alt="homeLogo"> 
                         <p class="header__nav__list__text">Inicio</p>
                         </a>
                     </div>
-                    <div class="header__nav__list__bg"> <!--MI LISTA-->    
+                    <!--MI LISTA--> 
+                    <div class="header__nav__list__bg">    
                         <a class="header__nav__list__link" href="miLista.html">
-                        <img class="header__nav__list__icon" src="img/list-interface-symbol.png" alt="homeLogo"> <!--ICONO-->
+                        <!--ICONO-->
+                        <img class="header__nav__list__icon" src="img/list-interface-symbol.png" alt="homeLogo"> 
                         <p class="header__nav__list__text">Mi Lista</p>
                         </a>
                     </div>
-                    <div class="header__nav__list__bg"> <!--PELICULAS-->
+                    <!--PELICULAS-->
+                    <div class="header__nav__list__bg"> 
                         <a class="header__nav__list__link" href="peliculas.html">
-                        <img class="header__nav__list__icon" src="img/video-player.png" alt="homeLogo"> <!--ICONO-->
+                        <!--ICONO-->
+                        <img class="header__nav__list__icon" src="img/video-player.png" alt="homeLogo"> 
                         <p class="header__nav__list__text">Peliculas</p>
                         </a>
                     </div>
-                    <div class="header__nav__list__bg"> <!--SERIES-->
+                    <!--SERIES-->
+                    <div class="header__nav__list__bg"> 
                         <a class="header__nav__list__link" href="series.html">
-                        <img class="header__nav__list__icon" src="img/tv.png" alt="homeLogo"> <!--ICONO-->
+                        <!--ICONO-->
+                        <img class="header__nav__list__icon" src="img/tv.png" alt="homeLogo"> 
                         <p class="header__nav__list__text">Series</p>
                         </a>
                     </div>
                 </div>
-                <div> <!--IR A AJUSTES-->
+                <!--IR A AJUSTES-->
+                <div> 
                     <div class="header__nav__list__bg"> 
                         <a class="header__nav__list__link" href="ajustes.html">
                         <img class="header__nav__list__icon" src="img/settings.png" alt="homeLogo">
@@ -60,53 +74,69 @@
                 </div>                                
             </nav>
         </header>
-        <main class="main"> <!--SECCION DEL MEDIO-->
-            <div class="main__buscar"> <!--BUSCADOR-->
+        <!--SECCION DEL MEDIO-->
+        <main class="main"> 
+            <!--BUSCADOR-->
+            <div class="main__buscar"> 
                 <input type="text" placeholder="Buscar" required>
-                <div class="main__buscar__btn"> <!--BOTON DEL BUSCADOR-->
+                <!--BOTON DEL BUSCADOR-->
+                <div class="main__buscar__btn"> 
                     <i class="fas fa-search icon"></i>
                 </div>
             </div>
-            <div class="peliculas__main"> <!--MAIN DE PELICULAS-->
-                <div class="peliculas__main__area area__uno"> <!--PRIMER AREA-->
+            <!--MAIN DE PELICULAS-->
+            <div class="peliculas__main"> 
+                <!--PRIMER AREA-->
+                <div class="peliculas__main__area area__uno"> 
                     <div class="peliculas__main__area__content">
-                        <img class="peliculas__main__area__content__img" src="img/noTimeToDieBanner.jpg" alt="noTimeToDieBanner"> <!--IMAGEN-->
-                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <!--IMAGEN-->
+                        <img class="peliculas__main__area__content__img" src="img/noTimeToDieBanner.jpg" alt="noTimeToDieBanner"> 
+                        <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <div class="peliculas__main__area__content__img__shadow"> 
                             <a href="https://www.youtube.com/watch?v=N_gD9-Oa0fg" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">007 No Time To Die</h4></a>
                         </div>
                     </div>
                 </div>
-                <div class="peliculas__main__area area__dos"> <!--DESCRIPCION DE LA PELICULA-->
+                <!--DESCRIPCION DE LA PELICULA-->
+                <div class="peliculas__main__area area__dos"> 
                     <div class="peliculas__main__area__content">
                         <div class="peliculas__main__area__content__descrip">
                             <p>Bond ha dejado el servicio. Su recién encontrada paz es interrumpida por una visita de su amigo de la CIA Felix Leiter. Bond y Leiter le siguen la pista a un misterioso villano en posesión de peligrosas nuevas tecnologías.</p>
                         </div>
                     </div>
                 </div>
-                <div class="peliculas__main__area area__tres"> <!--SEGUNDA AREA-->
+                <!--SEGUNDA AREA-->
+                <div class="peliculas__main__area area__tres"> 
                     <div class="peliculas__main__area__content">
-                        <img class="peliculas__main__area__content__img" src="img/guiltyBanner.jpg" alt="guiltyBanner"> <!--IMAGEN-->
-                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <!--IMAGEN-->
+                        <img class="peliculas__main__area__content__img" src="img/guiltyBanner.jpg" alt="guiltyBanner"> 
+                        <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <div class="peliculas__main__area__content__img__shadow"> 
                             <a href="https://www.youtube.com/watch?v=Se-sQCcyEbE" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">Culpable</h4></a>
                         </div>
                     </div>
                 </div>
-                <div class="peliculas__main__area area__cuatro"> <!--DESCRIPCION DE LA PELICULA-->
+                <!--DESCRIPCION DE LA PELICULA-->
+                <div class="peliculas__main__area area__cuatro"> 
                     <div class="peliculas__main__area__content">
                         <div class="peliculas__main__area__content__descrip">
                             <p>Múltiples incendios asolan Los Ángeles una tensa mañana en el centro de llamadas del 911. El operador Joe Baylor intenta salvar a una mujer en peligro, pero pronto descubre que nada es lo que parece y ha de afrontar la verdad.</p>
                         </div>
                     </div>
                 </div>
-                <div class="peliculas__main__area area__cinco"> <!--TERCER AREA-->
+                <!--TERCER AREA-->
+                <div class="peliculas__main__area area__cinco"> 
                     <div class="peliculas__main__area__content">
-                        <img class="peliculas__main__area__content__img" src="img/duneBanner.jpg" alt="duneBanner"> <!--IMAGEN-->
-                        <div class="peliculas__main__area__content__img__shadow"> <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <!--IMAGEN-->
+                        <img class="peliculas__main__area__content__img" src="img/duneBanner.jpg" alt="duneBanner"> 
+                        <!--DESCRIPCION Y LINK AL TRAILER-->
+                        <div class="peliculas__main__area__content__img__shadow"> 
                             <a href="https://www.youtube.com/watch?v=8g18jFHCLXk" target="blank"><h4 class="peliculas__main__area__content__img--shadow__text">Duna</h4></a>
                         </div>
                     </div>
                 </div>
-                <div class="peliculas__main__area area__seis"> <!--DESCRIPCION DE LA PELICULA-->
+                <!--DESCRIPCION DE LA PELICULA-->
+                <div class="peliculas__main__area area__seis"> 
                     <div class="peliculas__main__area__content">
                         <div class="peliculas__main__area__content__descrip">
                             <p>Adaptación de la novela de ciencia ficción de Frank Herbert sobre el hijo de una familia noble que trata de vengarse de la muerte de su padre y al mismo tiempo salvar un planeta que se le ha encomendado proteger.</p>
@@ -115,9 +145,11 @@
                 </div>
             </div>
         </main>
-        <aside class="aside"> <!--SECCION DE LA DERECHA-->
+        <!--SECCION DE LA DERECHA-->
+        <aside class="aside"> 
             <div class="peliculas__aside">
-                <div> <!--TITULO DE LA SECCION-->
+                <!--TITULO DE LA SECCION-->
+                <div> 
                     <h1 class="peliculas__aside__titulo">Proximos Estrenos</h1>
                 </div>
                 <!--PROXIMOS ESTRENOS-->
