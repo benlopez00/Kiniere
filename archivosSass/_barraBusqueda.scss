@@ -20,6 +20,16 @@ main{
             border-radius: 30%;
             cursor: pointer;
         }
+        .main__buscar__btn:hover{
+            background: white;
+            transform: scale(0.9,0.9);
+            transition: 0.5s;
+        }
+        .main__buscar__btn:hover > i{
+            transform: scale(0.8,0.8);
+            color: #ff2a34;
+            transition: 0.5s;
+        }
     }
     .main__buscar input{
         width: 30vw;
