@@ -9,7 +9,7 @@ $colorOscuroNivelUno: #201A23 /*white*/;
 }
 // mixin del desafio complementario
 @mixin areasMain {
-    @each $numero in uno, dos, tres, cuatro, cinco, seis {
+    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho {
         .area__#{$numero}{
             grid-area: canal__#{$numero}
         }

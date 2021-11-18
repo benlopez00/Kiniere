@@ -1,18 +1,21 @@
 @import "variables";
 .aside{
     .index__aside{
-        @include controlFlex(flex, column, space-around, center);
+        @include controlFlex(flex, column, space-between, center);
         height: 97vh;
+        overflow-y: scroll;
         .index__aside__titulo{
             font-family: 'Playfair Display', serif;
             font-weight: 700;
             color: #FF2A34;
             font-size: $sizeAbsolutoTexto;
+            margin: 2vh 0vw;
         }
         .index__aside__noticia{
             background-color: $colorOscuroNivelUno;
             width: 27vw;
             padding: 2vh 2vw;
+            margin: 2vh 0vw;
             border-radius: 20px;
             h2{
                 @if $colorOscuroNivelUno == #201A23{
@@ -38,5 +41,19 @@
                 margin: 7px;
             }
         }
+    }
+    .index__aside::-webkit-scrollbar{
+        width: 12px;
+        background-color: #2E2532;
+    }
+    .index__aside::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+        border-radius: 10px;
+        background-color: #2E2532;
+    }
+    .index__aside::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #D62929;
+        background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
     }
 }

@@ -5,12 +5,18 @@
         grid-template-areas: 
         "canal__uno canal__dos"
         "canal__tres canal__cuatro"
-        "canal__cinco canal__seis";
+        "canal__cinco canal__seis"
+        "canal__siete canal__ocho"
+        "canal__nueve canal__diez"
+        "canal__once canal__doce";
+        height: 87vh;
         grid-template-columns: 23vw 23vw;
         grid-template-rows: 25vh 25vh 25vh;
         padding: 2vh 3vw 2vh 3vw;
         grid-column-gap: 3vw;
         grid-row-gap: 4vh;
+        overflow-y: scroll;
+        
         .index__main__area{
             .index__main__area__content{
                 width: 23vw;
@@ -18,6 +24,9 @@
                 display: flex;
                 justify-content: center;
                 align-items: center;
+                box-shadow: 0 3px 8px 3px black;
+                border-radius: 25px;
+                position: relative;
                 .index__main__area__content__img{
                     width: 23vw;
                     height: 25vh;
@@ -27,6 +36,7 @@
                 }
                 .index__main__area__content__img__shadow{
                     position: absolute;
+                    z-index: 2;
                     width: 23vw;
                     height: 25vh;
                     background-color: rgba(0, 0, 0, 0.801);
@@ -68,5 +78,19 @@
         .area__seis{
             grid-area: canal__seis
         }*/
+    }
+    .index__main::-webkit-scrollbar{
+        width: 12px;
+        background-color: #2E2532;
+    }
+    .index__main::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+        border-radius: 10px;
+        background-color: #2E2532;
+    }
+    .index__main::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #D62929;
+        background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
     }
 }
