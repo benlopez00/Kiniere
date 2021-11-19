@@ -2,14 +2,19 @@
     .series__main{
         display: grid;
         grid-template-areas: 
-        "canalUno canalDos"
-        "canalTres canalCuatro"
-        "canalCinco canalSeis";
+        "canaluno canaldos"
+        "canaltres canalcuatro"
+        "canalcinco canalseis"
+        "canalsiete canalocho"
+        "canalnueve canaldiez"
+        "canalonce canaldoce";
         grid-template-columns: 23vw 23vw;
         grid-template-rows: 25vh 25vh 25vh;
         padding: 2vh 3vw 2vh 3vw;
         grid-column-gap: 3vw;
         grid-row-gap: 4vh;
+        overflow-y: scroll;
+        height: 87vh;
         .series__main__area{
             .series__main__area__content{
                 width: 23vw;
@@ -63,6 +68,8 @@
             }
             
         }
+        @include areasPelYSer;
+        /*
         .area__uno{
             grid-area: canalUno
         }
@@ -80,6 +87,20 @@
         }
         .area__seis{
             grid-area: canalSeis
-        }
+        }*/
+    }
+    .series__main::-webkit-scrollbar{
+        width: 12px;
+        background-color: #2E2532;
+    }
+    .series__main::-webkit-scrollbar-track{
+        -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
+        border-radius: 10px;
+        background-color: #2E2532;
+    }
+    .series__main::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: #D62929;
+        background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
     }
 }

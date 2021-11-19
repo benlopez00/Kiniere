@@ -7,11 +7,19 @@ $colorOscuroNivelUno: #201A23 /*white*/;
     justify-content: $justifyContent;
     align-items: $alignItems;
 }
-// mixin del desafio complementario
+// mixin del main de index
 @mixin areasMain {
-    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho {
+    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho, diez, once, doce {
         .area__#{$numero}{
             grid-area: canal__#{$numero}
+        }
+    }
+}
+//mixin del main de peliculas.html y series.html
+@mixin areasPelYSer {
+    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce {
+        .area__#{$numero}{
+            grid-area: canal#{$numero}
         }
     }
 }

@@ -349,6 +349,24 @@ main .main__buscar input {
   grid-area: canal__ocho;
 }
 
+.main .index__main .area__diez {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: canal__diez;
+}
+
+.main .index__main .area__once {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: canal__once;
+}
+
+.main .index__main .area__doce {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: canal__doce;
+}
+
 .main .index__main::-webkit-scrollbar {
   width: 12px;
   background-color: #2E2532;
@@ -534,10 +552,11 @@ main .main__buscar input {
   font-size: 250%;
 }
 
+/*white*/
 .main .peliculas__main {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "canalUno canalDos" "canalTres canalCuatro" "canalCinco canalSeis";
+      grid-template-areas: "canaluno canaldos" "canaltres canalcuatro" "canalcinco canalseis" "canalsiete canalocho" "canalnueve canaldiez" "canalonce canaldoce";
   -ms-grid-columns: 23vw 23vw;
       grid-template-columns: 23vw 23vw;
   -ms-grid-rows: 25vh 25vh 25vh;
@@ -545,6 +564,27 @@ main .main__buscar input {
   padding: 2vh 3vw 2vh 3vw;
   grid-column-gap: 3vw;
   grid-row-gap: 4vh;
+  overflow-y: scroll;
+  height: 87vh;
+  /*
+        .area__uno{
+            grid-area: canalUno
+        }
+        .area__dos{
+            grid-area: canalDos
+        }
+        .area__tres{
+            grid-area: canalTres
+        }
+        .area__cuatro{
+            grid-area: canalCuatro
+        }
+        .area__cinco{
+            grid-area: canalCinco
+        }
+        .area__seis{
+            grid-area: canalSeis
+        }*/
 }
 
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content {
@@ -617,37 +657,90 @@ main .main__buscar input {
 .main .peliculas__main .area__uno {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: canalUno;
+  grid-area: canaluno;
 }
 
 .main .peliculas__main .area__dos {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: canalDos;
+  grid-area: canaldos;
 }
 
 .main .peliculas__main .area__tres {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: canalTres;
+  grid-area: canaltres;
 }
 
 .main .peliculas__main .area__cuatro {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: canalCuatro;
+  grid-area: canalcuatro;
 }
 
 .main .peliculas__main .area__cinco {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: canalCinco;
+  grid-area: canalcinco;
 }
 
 .main .peliculas__main .area__seis {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
-  grid-area: canalSeis;
+  grid-area: canalseis;
+}
+
+.main .peliculas__main .area__siete {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: canalsiete;
+}
+
+.main .peliculas__main .area__ocho {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: canalocho;
+}
+
+.main .peliculas__main .area__nueve {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: canalnueve;
+}
+
+.main .peliculas__main .area__diez {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: canaldiez;
+}
+
+.main .peliculas__main .area__once {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: canalonce;
+}
+
+.main .peliculas__main .area__doce {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: canaldoce;
+}
+
+.main .peliculas__main::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2E2532;
+}
+
+.main .peliculas__main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #2E2532;
+}
+
+.main .peliculas__main::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
 }
 
 .aside .peliculas__aside {
@@ -699,7 +792,7 @@ main .main__buscar input {
 .main .series__main {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "canalUno canalDos" "canalTres canalCuatro" "canalCinco canalSeis";
+      grid-template-areas: "canaluno canaldos" "canaltres canalcuatro" "canalcinco canalseis" "canalsiete canalocho" "canalnueve canaldiez" "canalonce canaldoce";
   -ms-grid-columns: 23vw 23vw;
       grid-template-columns: 23vw 23vw;
   -ms-grid-rows: 25vh 25vh 25vh;
@@ -707,6 +800,27 @@ main .main__buscar input {
   padding: 2vh 3vw 2vh 3vw;
   grid-column-gap: 3vw;
   grid-row-gap: 4vh;
+  overflow-y: scroll;
+  height: 87vh;
+  /*
+        .area__uno{
+            grid-area: canalUno
+        }
+        .area__dos{
+            grid-area: canalDos
+        }
+        .area__tres{
+            grid-area: canalTres
+        }
+        .area__cuatro{
+            grid-area: canalCuatro
+        }
+        .area__cinco{
+            grid-area: canalCinco
+        }
+        .area__seis{
+            grid-area: canalSeis
+        }*/
 }
 
 .main .series__main .series__main__area .series__main__area__content {
@@ -779,37 +893,90 @@ main .main__buscar input {
 .main .series__main .area__uno {
   -ms-grid-row: 1;
   -ms-grid-column: 1;
-  grid-area: canalUno;
+  grid-area: canaluno;
 }
 
 .main .series__main .area__dos {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
-  grid-area: canalDos;
+  grid-area: canaldos;
 }
 
 .main .series__main .area__tres {
   -ms-grid-row: 2;
   -ms-grid-column: 1;
-  grid-area: canalTres;
+  grid-area: canaltres;
 }
 
 .main .series__main .area__cuatro {
   -ms-grid-row: 2;
   -ms-grid-column: 2;
-  grid-area: canalCuatro;
+  grid-area: canalcuatro;
 }
 
 .main .series__main .area__cinco {
   -ms-grid-row: 3;
   -ms-grid-column: 1;
-  grid-area: canalCinco;
+  grid-area: canalcinco;
 }
 
 .main .series__main .area__seis {
   -ms-grid-row: 3;
   -ms-grid-column: 2;
-  grid-area: canalSeis;
+  grid-area: canalseis;
+}
+
+.main .series__main .area__siete {
+  -ms-grid-row: 4;
+  -ms-grid-column: 1;
+  grid-area: canalsiete;
+}
+
+.main .series__main .area__ocho {
+  -ms-grid-row: 4;
+  -ms-grid-column: 2;
+  grid-area: canalocho;
+}
+
+.main .series__main .area__nueve {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: canalnueve;
+}
+
+.main .series__main .area__diez {
+  -ms-grid-row: 5;
+  -ms-grid-column: 2;
+  grid-area: canaldiez;
+}
+
+.main .series__main .area__once {
+  -ms-grid-row: 6;
+  -ms-grid-column: 1;
+  grid-area: canalonce;
+}
+
+.main .series__main .area__doce {
+  -ms-grid-row: 6;
+  -ms-grid-column: 2;
+  grid-area: canaldoce;
+}
+
+.main .series__main::-webkit-scrollbar {
+  width: 12px;
+  background-color: #2E2532;
+}
+
+.main .series__main::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+  border-radius: 10px;
+  background-color: #2E2532;
+}
+
+.main .series__main::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: #D62929;
+  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
 }
 
 .aside .series__aside {
