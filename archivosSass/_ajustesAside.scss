@@ -20,8 +20,13 @@
                 font-size: large;
                 font-family: 'Ubuntu', sans-serif
             }
-            ul{
-                list-style-position: inside;
+            .ajustes__aside__seccion__datos{
+                width: 250px;
+                margin: 5px 0px;
+                border-radius: 12px;
+            }
+            #boton__enviar{
+                width: 100px;
             }
             li{
                 margin: 10px;
@@ -42,7 +47,7 @@
                 border-radius: 10px;
                 background-color: #413446;
             }
-            .dropdown-item{
+            .dos{
                 border-radius: 0 0 27px 27px;
             }
         }

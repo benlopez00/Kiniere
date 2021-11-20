@@ -1100,8 +1100,14 @@ main .main__buscar input {
   font-family: 'Ubuntu', sans-serif;
 }
 
-.aside .ajustes__aside .ajustes__aside__seccion ul {
-  list-style-position: inside;
+.aside .ajustes__aside .ajustes__aside__seccion .ajustes__aside__seccion__datos {
+  width: 250px;
+  margin: 5px 0px;
+  border-radius: 12px;
+}
+
+.aside .ajustes__aside .ajustes__aside__seccion #boton__enviar {
+  width: 100px;
 }
 
 .aside .ajustes__aside .ajustes__aside__seccion li {
@@ -1126,7 +1132,7 @@ main .main__buscar input {
   background-color: #413446;
 }
 
-.aside .ajustes__aside .dropdown-menu .dropdown-item {
+.aside .ajustes__aside .dropdown-menu .dos {
   border-radius: 0 0 27px 27px;
 }
 

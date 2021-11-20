@@ -94,6 +94,18 @@
                 <div class="ajustes__main__seccion row container">
                     <div class="col-md-6 col-sm-12">
                         <h2 class="ajustes__main__seccion__nombre">
+                            Links a nuestras redes
+                        </h2>
+                    </div>
+                    <div class="col-md-6 col-sm-12">
+                        <button type="button" class="btn btn-primary .text-nowrap">Facebook</button>
+                        <button type="button" class="btn btn-success .text-nowrap">WhatsApp</button>
+                        <button type="button" class="btn btn-light .text-nowrap">Instagram</button>
+                    </div>
+                </div>
+                <div class="ajustes__main__seccion row container">
+                    <div class="col-md-6 col-sm-12">
+                        <h2 class="ajustes__main__seccion__nombre">
                             A que grupo pertenece el menor de edad?
                         </h2>
                     </div>
@@ -161,12 +173,21 @@
             <div class="ajustes__aside">
                 <div class="ajustes__aside__seccion">
                     <h2 class="ajustes__aside__seccion__nombre">
-                        ¿Problemas?
+                        ¿Problemas? Contactanos
                     </h2>
-                    <ul>
-                        <li>FAQ</li>
-                        <li>Contacto</li>
-                    </ul>
+                    <div>
+                        <input class="ajustes__aside__seccion__datos" type="text" id="name" name="fname" required minlength="4" maxlength="30" placeholder="Nombre">
+                    </div>
+                    <div>
+                        <input class="ajustes__aside__seccion__datos" type="email" id="email" name="email" required maxlength="50" placeholder="Email">
+                    </div>
+                    <div>
+                        <input class="ajustes__aside__seccion__datos" type="tel" id="phone" name="phone" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}" required maxlength="20" placeholder="Telefono">
+                    </div>
+                    <div>
+                        <input class="ajustes__aside__seccion__datos" type="text" id="comment" name="name" required minlength="4" maxlength="100" size="20" placeholder="Tu Comentario">
+                    </div>
+                    <button type="button" id="boton__enviar"  class=" btn btn-danger">Enviar</button>
                 </div> 
                 <div class="dropdown-menu">
                         <form class="px-4 py-3">
@@ -190,7 +211,7 @@
                         </form>
                         <div class="dropdown-divider"></div>
                         <a class="dropdown-item" href="#">Eres Nuevo? Registrate</a>
-                        <a class="dropdown-item" href="#">Te olvidaste tu contraseña?</a>
+                        <a class="dropdown-item dos" href="#">Te olvidaste tu contraseña?</a>
                 </div>
             </div> 
         </aside>
