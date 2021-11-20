@@ -599,6 +599,7 @@ main .main__buscar input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content .peliculas__main__area__content__img {
@@ -835,6 +836,7 @@ main .main__buscar input {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  position: relative;
 }
 
 .main .series__main .series__main__area .series__main__area__content .series__main__area__content__img {
