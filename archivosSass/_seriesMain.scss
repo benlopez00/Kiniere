@@ -18,23 +18,20 @@
         height: 87vh;
         .series__main__area{
             .series__main__area__content{
-                width: 320px;
-                height: 180px;
+                @include dimension(180px,320px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 .series__main__area__content__img{
-                    width: 320px;
-                    height: 180px;
+                    @include dimension(180px,320px);
                     margin: 0;
                     border-radius: 25px;
                     position: relative;
                 }
                 .series__main__area__content__img__shadow{
                     position: absolute;
-                    width: 320px;
-                    height: 180px;
+                    @include dimension(180px,320px);
                     background-color: rgba(0, 0, 0, 0.801);
                     border-radius: 25px;
                     display: none;
@@ -52,8 +49,7 @@
                 }
                 .series__main__area__content__descrip{
                 background-color: #201A23;
-                width: 320px;
-                height: 180px;
+                @include dimension(180px,320px);
                 padding: 2vh 2vw;
                 border-radius: 25px;
                 p{
@@ -123,30 +119,26 @@
             grid-template-columns: 0;
             grid-template-rows: 0;
             .series__main__area{
-                width: 360px;
-                height: 190px;
+                @include dimension(190px,360px);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
                 margin: 15px;
                 .series__main__area__content{
-                    width: 360px;
-                    height: 190px;
+                    @include dimension(190px,360px);
                     box-shadow: 0 3px 8px 3px black;
                     border-radius: 25px;
                     position: relative;
                     .series__main__area__content__img{
-                        width: 360px;
-                        height: 190px;
+                        @include dimension(190px,360px);
                         margin: 0;
                         border-radius: 25px;
                         position: relative;
                     }
                     .series__main__area__content__img__shadow{
                         position: absolute;
-                        width: 360px;
-                        height: 190px;
+                        @include dimension(190px,360px);
                         background-color: rgba(0, 0, 0, 0.801);
                         border-radius: 25px;
                         display: none;
@@ -164,8 +156,7 @@
                     }
                     .series__main__area__content__descrip{
                     background-color: #201A23;
-                    width: 360px;
-                    height: 190px;
+                    @include dimension(190px,360px);
                     padding: 10px;
                     border-radius: 25px;
                     p{

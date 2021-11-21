@@ -1,3 +1,4 @@
+@import "variables";
 .aside{
     .milista__aside{
         display: flex;
@@ -6,11 +7,9 @@
         align-items: center;
         height: 100vh;
         .milista__aside__video{
-            width: 360px;
-            height: 180px;
+            @include dimension(180px,360px);
             .milista__aside__video__estilo{
-            width: 321px;
-            height: 180px;
+            @include dimension(180px,321px);
             }
         }
         h1{
@@ -31,8 +30,7 @@
             overflow-x: scroll;
             overflow-y: hidden;
             .milista__aside__video{
-                width: 360px;
-                height: 180px;
+                @include dimension(180px,360px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;
@@ -40,8 +38,7 @@
                 margin: 10px;
                 padding: 10px;
                 .milista__aside__video__estilo{
-                width: 321px;
-                height: 180px;
+                @include dimension(180px,321px);
                 }
             }
             h1{

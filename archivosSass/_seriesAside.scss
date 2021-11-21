@@ -51,8 +51,7 @@
             }
             .series__aside__noticia{
                 background-color: #201A23;
-                width: 300px;
-                height: 200px;
+                @include dimension(200px,300px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;

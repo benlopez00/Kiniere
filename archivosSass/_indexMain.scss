@@ -19,11 +19,9 @@
         align-content: space-between;
         overflow-y: scroll;
         .index__main__area{
-            width: 320px;
-            height: 180px;
+            @include dimension(180px, 320px);
             .index__main__area__content{
-                width: 320px;
-                height: 180px;
+                @include dimension(180px, 320px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -31,8 +29,7 @@
                 border-radius: 25px;
                 position: relative;
                 .index__main__area__content__img{
-                    width: 320px;
-                    height: 180px;
+                    @include dimension(180px, 320px);
                     margin: 0;
                     border-radius: 25px;
                     position: relative;
@@ -40,8 +37,7 @@
                 .index__main__area__content__img__shadow{
                     position: absolute;
                     z-index: 2;
-                    width: 320px;
-                    height: 180px;
+                    @include dimension(180px, 320px);
                     background-color: rgba(0, 0, 0, 0.801);
                     border-radius: 25px;
                     display: none;
@@ -116,22 +112,19 @@
             grid-template-columns: 0;
             grid-template-rows: 0;
             .index__main__area{
-                width: 360px;
-                height: 190px;
+                @include dimension(190px, 360px);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
                 margin: 15px;
                 .index__main__area__content{
-                    width: 360px;
-                    height: 190px;
+                    @include dimension(190px, 360px);
                     box-shadow: 0 3px 8px 3px black;
                     border-radius: 25px;
                     position: relative;
                     .index__main__area__content__img{
-                        width: 360px;
-                        height: 190px;
+                        @include dimension(190px, 360px);
                         margin: 0;
                         border-radius: 25px;
                         position: relative;
@@ -139,8 +132,7 @@
                     .index__main__area__content__img__shadow{
                         position: absolute;
                         z-index: 2;
-                        width: 360px;
-                        height: 190px;
+                        @include dimension(190px, 360px);
                         background-color: rgba(0, 0, 0, 0.801);
                         border-radius: 25px;
                         display: none;

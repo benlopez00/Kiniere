@@ -10,6 +10,7 @@
 @import "seriesAside";
 @import "ajustesMain";
 @import "ajustesAside";
+@import "variables";
 body{
     .grid{
         display: grid;
@@ -48,26 +49,21 @@ body{
 @media only screen and (min-width: 350px) and (max-width: 960px){
     body{
         .grid{
-            height: 100vh;
-            width: 100vw;
+            @include dimension(100vh,100vw);
             display: flex;
             flex-direction: column;
             
             .header{
-                height: 8vh;
-                width: 100vw;
+                @include dimension(8vh,100vw);
             }
             .main{
-                height: 45vh;
-                width: 100vw;
+                @include dimension(45vh,100vw);
             }
             .aside{
-                height: 45vh;
-                width: 100vw;
+                @include dimension(45vh,100vw);
             }
             .footer{
-                height: 2vh;
-                width: 100vw;
+                @include dimension(2vh,100vw);
                 p{
                     margin: 0;
                     font-size: 50%;

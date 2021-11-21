@@ -1,3 +1,4 @@
+@import "variables";
 .main{
     .main__buscar{
         display: flex;
@@ -8,8 +9,7 @@
         .main__buscar__btn{
             right: 0;
             background: #ff2a34;
-            width: 50px;
-            height: 50px;
+            @include dimension(50px,50px);
             line-height: 50px;
             display: flex;
             flex-direction: column;
@@ -32,8 +32,7 @@
         }
     }
     .main__buscar input{
-        width: 30vw;
-        height: 5.5vh;
+        @include dimension(5.5vh,30vw);
         padding: 0 20px;
         font-size: 18px;
         color: black;
@@ -53,8 +52,7 @@
             .main__buscar__btn{
                 right: 0;
                 background: #ff2a34;
-                width: 50px;
-                height: 50px;
+                @include dimension(50px,50px);
                 line-height: 50px;
                 display: flex;
                 flex-direction: column;
@@ -77,8 +75,7 @@
             }
         }
         .main__buscar input{
-            width: 150px;
-            height: 5.5vh;
+            @include dimension(5.5vh,150px);
             padding: 0 20px;
             font-size: 18px;
             color: black;

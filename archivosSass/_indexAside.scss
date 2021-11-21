@@ -73,8 +73,7 @@
             }
             .index__aside__noticia{
                 background-color: $colorOscuroNivelUno;
-                width: 300px;
-                height: 300px;
+                @include dimension(300px, 300px);
                 display: flex;
                 flex-direction: column;
                 justify-content: space-evenly;

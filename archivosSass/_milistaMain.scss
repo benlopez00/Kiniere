@@ -1,3 +1,4 @@
+@import "variables";
 .main{
     .milista__main{
         display: grid;
@@ -13,8 +14,7 @@
         grid-row-gap: 4vh;
         .milista__main__area{
             .milista__main__area__add{
-                width: 320px;
-                height: 180px;
+                @include dimension(180px,320px);
                 display: flex;
                 justify-content: center;
                 align-items: center;
@@ -52,8 +52,7 @@
         .milista__main{
             display: flex;
             flex-direction: row;
-            height: 35vh;
-            width: auto;
+            @include dimension(35vh,auto);
             justify-content: space-between;
             align-items: center;
             padding: 0;
@@ -64,16 +63,14 @@
             grid-template-columns: 0;
             grid-template-rows: 0;
             .milista__main__area{
-                width: 360px;
-                height: 190px;
+                @include dimension(190px,360px);
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
                 padding: 0;
                 margin: 15px;
                 .milista__main__area__add{
-                    width: 360px;
-                    height: 190px;
+                    @include dimension(190px,360px);
                     display: flex;
                     justify-content: center;
                     align-items: center;

@@ -1,10 +1,10 @@
+@import "variables";
 .header{
     .header__nav{
         display: flex;
         flex-direction: column;
         justify-content: space-between;
-        height: 100vh;
-        width: 15vw;
+        @include dimension(100vh, 15vw);
         .header__nav__logolink{
             margin-left: auto;
             margin-right: auto;
@@ -20,8 +20,7 @@
             flex-direction: column;
             justify-content: center;
             .header__nav__list__bg{
-                width: 140px;
-                height: 40px;
+                @include dimension(40px, 140px);
                 margin: 2vh auto;
                 background-color: #413446;
                 border-radius: 10px;
@@ -36,8 +35,7 @@
                     align-items: center;
                 }
                 .header__nav__list__icon{
-                    width: 1.5em;
-                    height: 1.5em;
+                    @include dimension(1.5em, 1.5em);
                     margin-left: 1vw;
                 }
                 .header__nav__list__text{
@@ -56,8 +54,7 @@
         }
         div{
             .header__nav__list__bg{
-                width: 140px;
-                height: 40px;
+                @include dimension(40px, 140px);
                 margin: 2vh auto;
                 background-color: #413446;
                 border-radius: 10px;
@@ -72,8 +69,7 @@
                     align-items: center;
                 }
                 .header__nav__list__icon{
-                    width: 1.5em;
-                    height: 1.5em;
+                    @include dimension(1.5em,1.5em);
                     margin-left: 1vw;
                 }
                 .header__nav__list__text{
@@ -94,8 +90,7 @@
             display: flex;
             flex-direction: row;
             justify-content: space-around;
-            height: 8vh;
-            width: 100vw;
+            @include dimension(8vh,100vw);
             .header__nav__logolink{
                 margin: 0;
                 display: flex;
@@ -117,8 +112,7 @@
                 align-items: center;
                 .header__nav__list__bg{
                     margin: 7px;
-                    width: 40px;
-                    height: 40px;
+                    @include dimension(40px,40px);
                     background-color: #413446;
                     border-radius: 10px;
                     display: flex;
@@ -133,8 +127,7 @@
                         align-items: center;
                     }
                     .header__nav__list__icon{
-                        width: 1.5em;
-                        height: 1.5em;
+                        @include dimension(1.5em,1.5em);
                         margin-left: 0;
                     }
                     .header__nav__list__text{
@@ -154,8 +147,7 @@
                 align-items: center;
                 .header__nav__list__bg{
                     margin: 7px;
-                    width: 40px;
-                    height: 40px;
+                    @include dimension(40px,40px);
                     background-color: #413446;
                     border-radius: 10px;
                     display: flex;
@@ -170,8 +162,7 @@
                         align-items: center;
                     }
                     .header__nav__list__icon{
-                        width: 1.5em;
-                        height: 1.5em;
+                        @include dimension(1.5em,1.5em);
                         margin-left: 0;
                     }
                     .header__nav__list__text{

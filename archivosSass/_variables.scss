@@ -7,6 +7,11 @@ $colorOscuroNivelUno: #201A23 /*white*/;
     justify-content: $justifyContent;
     align-items: $alignItems;
 }
+//Mixin para tamaño
+@mixin dimension ($altura, $ancho){
+    height: $altura;
+    width: $ancho;
+}
 // mixin del main de index
 @mixin areasMain {
     @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce {
