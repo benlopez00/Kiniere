@@ -30,3 +30,47 @@
         }
     }
 }
+
+@media only screen and (min-width: 350px) and (max-width: 960px){
+    .main{
+        .ajustes__main{
+            display: flex;
+            flex-direction: row;
+            justify-content: flex-start;
+            align-items: center;
+            overflow-x: scroll;
+            .ajustes__main__titulo{
+                text-align: justify;
+                font-size: 200%;
+                font-family: 'Ubuntu', sans-serif;
+                color: white;
+                margin: 15px;
+            }
+            .ajustes__main__seccion{
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+                background-color: #201A23;
+                padding: 10px;
+                border-radius: 20px;
+                margin: 15px;
+                .ajustes__main__seccion__nombre{
+                    margin: 10px;
+                    color: white;
+                    text-align: justify;
+                    font-size: large;
+                    font-family: 'Ubuntu', sans-serif
+                }
+                .btn-outline-primary{
+                    background-color: #413446;
+                    color: #0d6efd;
+                }
+                .btn-outline-danger{
+                    background: none;
+                    color: #dc3545;
+                }
+            }
+        }
+    }
+}

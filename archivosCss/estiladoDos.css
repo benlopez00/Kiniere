@@ -746,6 +746,7 @@
       -ms-flex-align: center;
           align-items: center;
   height: 97vh;
+  overflow-y: scroll;
 }
 
 .aside .index__aside .index__aside__titulo {
@@ -1052,39 +1053,21 @@
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  -webkit-box-orient: horizontal;
+  -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  -webkit-box-pack: justify;
-      -ms-flex-pack: justify;
-          justify-content: space-between;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 45vh;
-  overflow-x: scroll;
-  overflow-y: hidden;
+  height: 100vh;
 }
 
 .aside .milista__aside .milista__aside__video {
   width: 360px;
   height: 180px;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-  -webkit-box-pack: space-evenly;
-      -ms-flex-pack: space-evenly;
-          justify-content: space-evenly;
-  -webkit-box-align: center;
-      -ms-flex-align: center;
-          align-items: center;
-  margin: 10px;
-  padding: 10px;
 }
 
 .aside .milista__aside .milista__aside__video .milista__aside__video__estilo {
@@ -1096,24 +1079,69 @@
   font-family: 'Playfair Display', serif;
   color: #FF2A34;
   font-size: 250%;
-  margin: 15px;
 }
 
-.aside .milista__aside::-webkit-scrollbar {
-  width: 12px;
-  background-color: #2E2532;
-}
-
-.aside .milista__aside::-webkit-scrollbar-track {
-  -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
-  border-radius: 10px;
-  background-color: #2E2532;
-}
-
-.aside .milista__aside::-webkit-scrollbar-thumb {
-  border-radius: 10px;
-  background-color: #D62929;
-  background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
+@media only screen and (min-width: 350px) and (max-width: 960px) {
+  .aside .milista__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    height: 45vh;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .aside .milista__aside .milista__aside__video {
+    width: 360px;
+    height: 180px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    margin: 10px;
+    padding: 10px;
+  }
+  .aside .milista__aside .milista__aside__video .milista__aside__video__estilo {
+    width: 321px;
+    height: 180px;
+  }
+  .aside .milista__aside h1 {
+    font-family: 'Playfair Display', serif;
+    color: #FF2A34;
+    font-size: 250%;
+  }
+  .aside .milista__aside::-webkit-scrollbar {
+    width: 12px;
+    background-color: #2E2532;
+  }
+  .aside .milista__aside::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.9);
+    border-radius: 10px;
+    background-color: #2E2532;
+  }
+  .aside .milista__aside::-webkit-scrollbar-thumb {
+    border-radius: 10px;
+    background-color: #D62929;
+    background-image: -webkit-linear-gradient(90deg, transparent, rgba(0, 0, 0, 0.4) 50%, transparent, transparent);
+  }
 }
 
 /*white*/
@@ -2014,6 +2042,66 @@
   color: #dc3545;
 }
 
+@media only screen and (min-width: 350px) and (max-width: 960px) {
+  .main .ajustes__main {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: start;
+        -ms-flex-pack: start;
+            justify-content: flex-start;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    overflow-x: scroll;
+  }
+  .main .ajustes__main .ajustes__main__titulo {
+    text-align: justify;
+    font-size: 200%;
+    font-family: 'Ubuntu', sans-serif;
+    color: white;
+    margin: 15px;
+  }
+  .main .ajustes__main .ajustes__main__seccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    background-color: #201A23;
+    padding: 10px;
+    border-radius: 20px;
+    margin: 15px;
+  }
+  .main .ajustes__main .ajustes__main__seccion .ajustes__main__seccion__nombre {
+    margin: 10px;
+    color: white;
+    text-align: justify;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .main .ajustes__main .ajustes__main__seccion .btn-outline-primary {
+    background-color: #413446;
+    color: #0d6efd;
+  }
+  .main .ajustes__main .ajustes__main__seccion .btn-outline-danger {
+    background: none;
+    color: #dc3545;
+  }
+}
+
 .aside .ajustes__aside {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -2088,6 +2176,97 @@
 
 .aside .ajustes__aside .dropdown-menu .dos {
   border-radius: 0 0 27px 27px;
+}
+
+@media only screen and (min-width: 350px) and (max-width: 960px) {
+  .aside .ajustes__aside {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    height: 45vh;
+    width: auto;
+    overflow-x: scroll;
+    overflow-y: hidden;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccion {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    background-color: #201A23;
+    width: 300px;
+    padding: 15px;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccion .ajustes__aside__seccion__nombre {
+    margin: 10px;
+    color: white;
+    text-align: justify;
+    font-size: large;
+    font-family: 'Ubuntu', sans-serif;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccion .ajustes__aside__seccion__datos {
+    width: 250px;
+    margin: 5px 0px;
+    border-radius: 12px;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccion #boton__enviar {
+    width: 100px;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccion li {
+    margin: 10px;
+    color: white;
+    font-size: 80%;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 300;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccionDos {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccionDos .dropdown-menu {
+    display: inline-block;
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin: 15px;
+    border-radius: 20px;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccionDos .dropdown-menu form {
+    width: 300px;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccionDos .dropdown-menu .btn-primary {
+    width: 150px;
+    font-size: medium;
+    border-radius: 10px;
+    background-color: #413446;
+  }
+  .aside .ajustes__aside .ajustes__aside__seccionDos .dropdown-menu .dos {
+    border-radius: 0 0 27px 27px;
+  }
 }
 
 body .grid {

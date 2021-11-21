@@ -3,6 +3,7 @@
     .index__aside{
         @include controlFlex(flex, column, space-between, center);
         height: 97vh;
+        overflow-y: scroll;
         .index__aside__titulo{
             font-family: 'Playfair Display', serif;
             font-weight: 700;
