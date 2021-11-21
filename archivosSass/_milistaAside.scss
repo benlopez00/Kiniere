@@ -6,12 +6,12 @@
         align-items: center;
         height: 100vh;
         .milista__aside__video{
-            width: 30vw;
-            height: 30vh;
-        }
-        .milista__aside__video__estilo{
-            width: 30vw;
-            height: 30vh;
+            width: 360px;
+            height: 180px;
+            .milista__aside__video__estilo{
+            width: 321px;
+            height: 180px;
+            }
         }
         h1{
             font-family: 'Playfair Display', serif;

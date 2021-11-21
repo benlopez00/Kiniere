@@ -9,7 +9,7 @@ $colorOscuroNivelUno: #201A23 /*white*/;
 }
 // mixin del main de index
 @mixin areasMain {
-    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho, diez, once, doce {
+    @each $numero in uno, dos, tres, cuatro, cinco, seis, siete, ocho, nueve, diez, once, doce {
         .area__#{$numero}{
             grid-area: canal__#{$numero}
         }

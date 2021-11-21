@@ -10,6 +10,7 @@
       -ms-flex-pack: justify;
           justify-content: space-between;
   height: 100vh;
+  width: 15vw;
 }
 
 .header .header__nav .header__nav__logolink {
@@ -39,7 +40,7 @@
 }
 
 .header .header__nav .header__nav__list .header__nav__list__bg {
-  width: 10vw;
+  width: 140px;
   height: 40px;
   margin: 2vh auto;
   background-color: #413446;
@@ -94,7 +95,7 @@
 }
 
 .header .header__nav div .header__nav__list__bg {
-  width: 10vw;
+  width: 140px;
   height: 40px;
   margin: 2vh auto;
   background-color: #413446;
@@ -217,13 +218,18 @@ main .main__buscar input {
   display: grid;
       grid-template-areas: "canal__uno canal__dos" "canal__tres canal__cuatro" "canal__cinco canal__seis" "canal__siete canal__ocho" "canal__nueve canal__diez" "canal__once canal__doce";
   height: 87vh;
-  -ms-grid-columns: 23vw 23vw;
-      grid-template-columns: 23vw 23vw;
-  -ms-grid-rows: 25vh 25vh 25vh;
-      grid-template-rows: 25vh 25vh 25vh;
-  padding: 2vh 3vw 2vh 3vw;
-  grid-column-gap: 3vw;
+  -ms-grid-columns: 320px 320px;
+      grid-template-columns: 320px 320px;
+  -ms-grid-rows: 180px 180px 180px;
+      grid-template-rows: 180px 180px 180px;
+  padding: 2vh 5vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 4vh;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -ms-flex-line-pack: justify;
+      align-content: space-between;
   overflow-y: scroll;
   /*.area__uno{
             grid-area: canal__uno
@@ -245,9 +251,14 @@ main .main__buscar input {
         }*/
 }
 
+.main .index__main .index__main__area {
+  width: 320px;
+  height: 180px;
+}
+
 .main .index__main .index__main__area .index__main__area__content {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -264,8 +275,8 @@ main .main__buscar input {
 }
 
 .main .index__main .index__main__area .index__main__area__content .index__main__area__content__img {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   margin: 0;
   border-radius: 25px;
   position: relative;
@@ -274,8 +285,8 @@ main .main__buscar input {
 .main .index__main .index__main__area .index__main__area__content .index__main__area__content__img__shadow {
   position: absolute;
   z-index: 2;
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   background-color: rgba(0, 0, 0, 0.801);
   border-radius: 25px;
   display: none;
@@ -349,6 +360,12 @@ main .main__buscar input {
   grid-area: canal__ocho;
 }
 
+.main .index__main .area__nueve {
+  -ms-grid-row: 5;
+  -ms-grid-column: 1;
+  grid-area: canal__nueve;
+}
+
 .main .index__main .area__diez {
   -ms-grid-row: 5;
   -ms-grid-column: 2;
@@ -413,7 +430,7 @@ main .main__buscar input {
 
 .aside .index__aside .index__aside__noticia {
   background-color: #201A23;
-  width: 27vw;
+  width: 360px;
   padding: 2vh 2vw;
   margin: 2vh 0vw;
   border-radius: 20px;
@@ -455,18 +472,19 @@ main .main__buscar input {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "canalUno canalDos" "canalTres canalCuatro" "canalCinco canalSeis";
-  -ms-grid-columns: 23vw 23vw;
-      grid-template-columns: 23vw 23vw;
-  -ms-grid-rows: 25vh 25vh 25vh;
-      grid-template-rows: 25vh 25vh 25vh;
-  padding: 2vh 3vw 2vh 3vw;
-  grid-column-gap: 3vw;
+  height: 87vh;
+  -ms-grid-columns: 320px 320px;
+      grid-template-columns: 320px 320px;
+  -ms-grid-rows: 180px 180px 180px;
+      grid-template-rows: 180px 180px 180px;
+  padding: 2vh 5vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 4vh;
 }
 
 .main .milista__main .milista__main__area .milista__main__area__add {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -537,13 +555,13 @@ main .main__buscar input {
 }
 
 .aside .milista__aside .milista__aside__video {
-  width: 30vw;
-  height: 30vh;
+  width: 360px;
+  height: 180px;
 }
 
-.aside .milista__aside .milista__aside__video__estilo {
-  width: 30vw;
-  height: 30vh;
+.aside .milista__aside .milista__aside__video .milista__aside__video__estilo {
+  width: 321px;
+  height: 180px;
 }
 
 .aside .milista__aside h1 {
@@ -557,15 +575,15 @@ main .main__buscar input {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "canaluno canaldos" "canaltres canalcuatro" "canalcinco canalseis" "canalsiete canalocho" "canalnueve canaldiez" "canalonce canaldoce";
-  -ms-grid-columns: 23vw 23vw;
-      grid-template-columns: 23vw 23vw;
-  -ms-grid-rows: 25vh 25vh 25vh;
-      grid-template-rows: 25vh 25vh 25vh;
-  padding: 2vh 3vw 2vh 3vw;
-  grid-column-gap: 3vw;
+  height: 87vh;
+  -ms-grid-columns: 320px 320px;
+      grid-template-columns: 320px 320px;
+  -ms-grid-rows: 180px 180px 180px;
+      grid-template-rows: 180px 180px 180px;
+  padding: 2vh 5vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 4vh;
   overflow-y: scroll;
-  height: 87vh;
   /*
         .area__uno{
             grid-area: canalUno
@@ -587,9 +605,14 @@ main .main__buscar input {
         }*/
 }
 
+.main .peliculas__main .peliculas__main__area {
+  width: 320px;
+  height: 180px;
+}
+
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -603,8 +626,8 @@ main .main__buscar input {
 }
 
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content .peliculas__main__area__content__img {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   margin: 0;
   border-radius: 25px;
   position: relative;
@@ -612,8 +635,8 @@ main .main__buscar input {
 
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content .peliculas__main__area__content__img__shadow {
   position: absolute;
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   background-color: rgba(0, 0, 0, 0.801);
   border-radius: 25px;
   display: none;
@@ -641,8 +664,8 @@ main .main__buscar input {
 
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content__descrip {
   background-color: #201A23;
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   padding: 2vh 2vw;
   border-radius: 25px;
 }
@@ -650,7 +673,7 @@ main .main__buscar input {
 .main .peliculas__main .peliculas__main__area .peliculas__main__area__content__descrip p {
   color: white;
   text-align: justify;
-  font-size: 100%;
+  font-size: 13.33333px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
@@ -769,8 +792,9 @@ main .main__buscar input {
 
 .aside .peliculas__aside .peliculas__aside__noticia {
   background-color: #201A23;
-  width: 27vw;
+  width: 360px;
   padding: 2vh 2vw;
+  margin: 2vh 0vw;
   border-radius: 20px;
 }
 
@@ -790,16 +814,17 @@ main .main__buscar input {
   margin: 7px;
 }
 
+/*white*/
 .main .series__main {
   display: -ms-grid;
   display: grid;
       grid-template-areas: "canaluno canaldos" "canaltres canalcuatro" "canalcinco canalseis" "canalsiete canalocho" "canalnueve canaldiez" "canalonce canaldoce";
-  -ms-grid-columns: 23vw 23vw;
-      grid-template-columns: 23vw 23vw;
-  -ms-grid-rows: 25vh 25vh 25vh;
-      grid-template-rows: 25vh 25vh 25vh;
-  padding: 2vh 3vw 2vh 3vw;
-  grid-column-gap: 3vw;
+  -ms-grid-columns: 320px 320px;
+      grid-template-columns: 320px 320px;
+  -ms-grid-rows: 180px 180px 180px;
+      grid-template-rows: 180px 180px 180px;
+  padding: 2vh 5vw;
+  grid-column-gap: 4vw;
   grid-row-gap: 4vh;
   overflow-y: scroll;
   height: 87vh;
@@ -825,8 +850,8 @@ main .main__buscar input {
 }
 
 .main .series__main .series__main__area .series__main__area__content {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -840,8 +865,8 @@ main .main__buscar input {
 }
 
 .main .series__main .series__main__area .series__main__area__content .series__main__area__content__img {
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   margin: 0;
   border-radius: 25px;
   position: relative;
@@ -849,8 +874,8 @@ main .main__buscar input {
 
 .main .series__main .series__main__area .series__main__area__content .series__main__area__content__img__shadow {
   position: absolute;
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   background-color: rgba(0, 0, 0, 0.801);
   border-radius: 25px;
   display: none;
@@ -872,8 +897,8 @@ main .main__buscar input {
 
 .main .series__main .series__main__area .series__main__area__content .series__main__area__content__descrip {
   background-color: #201A23;
-  width: 23vw;
-  height: 25vh;
+  width: 320px;
+  height: 180px;
   padding: 2vh 2vw;
   border-radius: 25px;
 }
@@ -881,7 +906,7 @@ main .main__buscar input {
 .main .series__main .series__main__area .series__main__area__content .series__main__area__content__descrip p {
   color: white;
   text-align: justify;
-  font-size: 100%;
+  font-size: 13.33333px;
   font-family: 'Open Sans', sans-serif;
   font-weight: 300;
 }
@@ -1006,8 +1031,9 @@ main .main__buscar input {
 
 .aside .series__aside .series__aside__noticia {
   background-color: #201A23;
-  width: 27vw;
+  width: 360px;
   padding: 2vh 2vw;
+  margin: 2vh 0vw;
   border-radius: 20px;
 }
 

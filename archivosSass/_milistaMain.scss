@@ -5,15 +5,16 @@
         "canalUno canalDos"
         "canalTres canalCuatro"
         "canalCinco canalSeis";
-        grid-template-columns: 23vw 23vw;
-        grid-template-rows: 25vh 25vh 25vh;
-        padding: 2vh 3vw 2vh 3vw;
-        grid-column-gap: 3vw;
+        height: 87vh;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 180px 180px 180px;
+        padding: 2vh 5vw;
+        grid-column-gap: 4vw;
         grid-row-gap: 4vh;
         .milista__main__area{
             .milista__main__area__add{
-                width: 23vw;
-                height: 25vh;
+                width: 320px;
+                height: 180px;
                 display: flex;
                 justify-content: center;
                 align-items: center;

@@ -9,32 +9,34 @@
         "canalsiete canalocho"
         "canalnueve canaldiez"
         "canalonce canaldoce";
-        grid-template-columns: 23vw 23vw;
-        grid-template-rows: 25vh 25vh 25vh;
-        padding: 2vh 3vw 2vh 3vw;
-        grid-column-gap: 3vw;
+        height: 87vh;
+        grid-template-columns: 320px 320px;
+        grid-template-rows: 180px 180px 180px;
+        padding: 2vh 5vw;
+        grid-column-gap: 4vw;
         grid-row-gap: 4vh;
         overflow-y: scroll;
-        height: 87vh;
         .peliculas__main__area{
+            width: 320px;
+            height: 180px;
             .peliculas__main__area__content{
-                width: 23vw;
-                height: 25vh;
+                width: 320px;
+                height: 180px;
                 display: flex;
                 justify-content: center;
                 align-items: center;
                 position: relative;
                 .peliculas__main__area__content__img{
-                    width: 23vw;
-                    height: 25vh;
+                    width: 320px;
+                    height: 180px;
                     margin: 0;
                     border-radius: 25px;
                     position: relative;
                 }
                 .peliculas__main__area__content__img__shadow{
                     position: absolute;
-                    width: 23vw;
-                    height: 25vh;
+                    width: 320px;
+                    height: 180px;
                     background-color: rgba(0, 0, 0, 0.801);
                     border-radius: 25px;
                     display: none;
@@ -56,14 +58,14 @@
             }
             .peliculas__main__area__content__descrip{
                 background-color: #201A23;
-                width: 23vw;
-                height: 25vh;
+                width: 320px;
+                height: 180px;
                 padding: 2vh 2vw;
                 border-radius: 25px;
                 p{
                     color: white;
                     text-align: justify;
-                    font-size: 100%;
+                    font-size: $sizeAbsolutoTexto/3;
                     font-family: 'Open Sans', sans-serif;
                     font-weight: 300;
                 }
