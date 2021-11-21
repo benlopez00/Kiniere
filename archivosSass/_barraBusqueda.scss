@@ -1,4 +1,4 @@
-main{
+.main{
     .main__buscar{
         display: flex;
         flex-direction: row;
@@ -40,5 +40,51 @@ main{
         outline: none;
         border: 1px solid silver;
         border-radius: 10px;
+    }
+}
+@media only screen and (min-width: 350px) and (max-width: 960px){
+    .main{
+        .main__buscar{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+            align-items: center;
+            padding: 1.5vh;
+            .main__buscar__btn{
+                right: 0;
+                background: #ff2a34;
+                width: 50px;
+                height: 7vh;
+                line-height: 50px;
+                display: flex;
+                flex-direction: column;
+                justify-content: center;
+                align-items: center;
+                color: white;
+                font-size: 20px;
+                border-radius: 30%;
+                cursor: pointer;
+            }
+            .main__buscar__btn:hover{
+                background: white;
+                transform: scale(0.9,0.9);
+                transition: 0.5s;
+            }
+            .main__buscar__btn:hover > i{
+                transform: scale(0.8,0.8);
+                color: #ff2a34;
+                transition: 0.5s;
+            }
+        }
+        .main__buscar input{
+            width: 150px;
+            height: 5.5vh;
+            padding: 0 20px;
+            font-size: 18px;
+            color: black;
+            outline: none;
+            border: 1px solid silver;
+            border-radius: 10px;
+        }
     }
 }
