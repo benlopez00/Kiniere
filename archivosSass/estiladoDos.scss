@@ -20,20 +20,20 @@ body{
         grid-template-columns: 3fr 11fr 6fr;
         grid-template-rows: 97vh 3vh;
         .header{
-            background-color: #413446;
+            background-color: $colorOscuroUno;
             grid-area: headerGrid;
         }
         .main{
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
             grid-area: seccionUno;
         }
         .aside{
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
             grid-area: seccionDos;
         }
         .footer{
             grid-area: pie;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
             display: flex;
             flex-direction: row;
             justify-content: center;

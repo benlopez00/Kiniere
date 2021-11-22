@@ -8,7 +8,7 @@
         padding: 1.5vh;
         .main__buscar__btn{
             right: 0;
-            background: #ff2a34;
+            background: $colorRojoDos;
             @include dimension(50px,50px);
             line-height: 50px;
             display: flex;
@@ -27,7 +27,7 @@
         }
         .main__buscar__btn:hover > i{
             transform: scale(0.8,0.8);
-            color: #ff2a34;
+            color: $colorRojoDos;
             transition: 0.5s;
         }
     }
@@ -51,7 +51,7 @@
             padding: 1.5vh;
             .main__buscar__btn{
                 right: 0;
-                background: #ff2a34;
+                background: $colorRojoDos;
                 @include dimension(50px,50px);
                 line-height: 50px;
                 display: flex;
@@ -70,7 +70,7 @@
             }
             .main__buscar__btn:hover > i{
                 transform: scale(0.8,0.8);
-                color: #ff2a34;
+                color: $colorRojoDos;
                 transition: 0.5s;
             }
         }

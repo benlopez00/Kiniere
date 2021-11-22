@@ -22,12 +22,12 @@
             .header__nav__list__bg{
                 @include dimension(40px, 140px);
                 margin: 2vh auto;
-                background-color: #413446;
+                background-color: $colorOscuroUno;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                box-shadow: 0 1px 5px 4px #2E2532;
+                box-shadow: 0 1px 5px 4px $colorOscuroDos;
                 .header__nav__list__link{
                     display: flex;
                     flex-direction: row;
@@ -48,7 +48,7 @@
                 }
             }
             .header__nav__list__bg:hover{
-                background-color: #ff2a34;
+                background-color: $colorRojoDos;
                 transition: all 0.5s;
             }
         }
@@ -56,12 +56,12 @@
             .header__nav__list__bg{
                 @include dimension(40px, 140px);
                 margin: 2vh auto;
-                background-color: #413446;
+                background-color: $colorOscuroUno;
                 border-radius: 10px;
                 display: flex;
                 flex-direction: row;
                 align-items: center;
-                box-shadow: 0 1px 5px 4px #2E2532;
+                box-shadow: 0 1px 5px 4px $colorOscuroDos;
                 .header__nav__list__link{
                     display: flex;
                     flex-direction: row;
@@ -113,13 +113,13 @@
                 .header__nav__list__bg{
                     margin: 7px;
                     @include dimension(40px,40px);
-                    background-color: #413446;
+                    background-color: $colorOscuroUno;
                     border-radius: 10px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    box-shadow: 0 1px 5px 4px #2E2532;
+                    box-shadow: 0 1px 5px 4px$colorOscuroDos;
                     .header__nav__list__link{
                         display: flex;
                         flex-direction: row;
@@ -135,7 +135,7 @@
                     }
                 }
                 .header__nav__list__bg:hover{
-                    background-color: #ff2a34;
+                    background-color: $colorRojoDos;
                     transition: all 0.5s;
                 }
             }
@@ -148,13 +148,13 @@
                 .header__nav__list__bg{
                     margin: 7px;
                     @include dimension(40px,40px);
-                    background-color: #413446;
+                    background-color: $colorOscuroUno;
                     border-radius: 10px;
                     display: flex;
                     flex-direction: row;
                     justify-content: center;
                     align-items: center;
-                    box-shadow: 0 1px 5px 4px #2E2532;
+                    box-shadow: 0 1px 5px 4px $colorOscuroDos;
                     .header__nav__list__link{
                         display: flex;
                         flex-direction: row;

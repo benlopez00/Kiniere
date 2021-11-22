@@ -90,7 +90,7 @@
 }
 
 .header .header__nav .header__nav__list .header__nav__list__bg:hover {
-  background-color: #ff2a34;
+  background-color: #FF2A34;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
 }
@@ -241,7 +241,7 @@
     display: none;
   }
   .header .header__nav .header__nav__list .header__nav__list__bg:hover {
-    background-color: #ff2a34;
+    background-color: #FF2A34;
     -webkit-transition: all 0.5s;
     transition: all 0.5s;
   }
@@ -326,7 +326,7 @@
 
 .main .main__buscar .main__buscar__btn {
   right: 0;
-  background: #ff2a34;
+  background: #FF2A34;
   height: 50px;
   width: 50px;
   line-height: 50px;
@@ -360,7 +360,7 @@
 .main .main__buscar .main__buscar__btn:hover > i {
   -webkit-transform: scale(0.8, 0.8);
           transform: scale(0.8, 0.8);
-  color: #ff2a34;
+  color: #FF2A34;
   -webkit-transition: 0.5s;
   transition: 0.5s;
 }
@@ -395,7 +395,7 @@
   }
   .main .main__buscar .main__buscar__btn {
     right: 0;
-    background: #ff2a34;
+    background: #FF2A34;
     height: 50px;
     width: 50px;
     line-height: 50px;
@@ -427,7 +427,7 @@
   .main .main__buscar .main__buscar__btn:hover > i {
     -webkit-transform: scale(0.8, 0.8);
             transform: scale(0.8, 0.8);
-    color: #ff2a34;
+    color: #FF2A34;
     -webkit-transition: 0.5s;
     transition: 0.5s;
   }

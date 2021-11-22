@@ -103,16 +103,16 @@
         }
         .milista__main::-webkit-scrollbar{
             width: 12px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .milista__main::-webkit-scrollbar-track{
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
             border-radius: 10px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .milista__main::-webkit-scrollbar-thumb{
             border-radius: 10px;
-            background-color: #D62929;
+            background-color: $colorRojo;
             background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
         }
     }

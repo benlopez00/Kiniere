@@ -53,7 +53,7 @@
                 display: flex;
             }
             .peliculas__main__area__content__descrip{
-                background-color: #201A23;
+                background-color: $colorOscuroTres;
                 @include dimension(180px,320px);
                 padding: 2vh 2vw;
                 border-radius: 25px;
@@ -90,16 +90,16 @@
     }
     .peliculas__main::-webkit-scrollbar{
         width: 12px;
-        background-color: #2E2532;
+        background-color: $colorOscuroDos;
     }
     .peliculas__main::-webkit-scrollbar-track{
         -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
         border-radius: 10px;
-        background-color: #2E2532;
+        background-color: $colorOscuroDos;
     }
     .peliculas__main::-webkit-scrollbar-thumb{
         border-radius: 10px;
-        background-color: #D62929;
+        background-color: $colorRojo;
         background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
     }
 }
@@ -160,7 +160,7 @@
                     display: flex;
                 }
                 .peliculas__main__area__content__descrip{
-                    background-color: #201A23;
+                    background-color: $colorOscuroTres;
                     @include dimension(190px,360px);
                     padding: 10px;
                     border-radius: 25px;
@@ -176,16 +176,16 @@
         }
         .peliculas__main::-webkit-scrollbar{
             width: 12px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .peliculas__main::-webkit-scrollbar-track{
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
             border-radius: 10px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .peliculas__main::-webkit-scrollbar-thumb{
             border-radius: 10px;
-            background-color: #D62929;
+            background-color: $colorRojo;
             background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
         }
     }

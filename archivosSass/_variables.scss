@@ -1,6 +1,12 @@
 // 3 bloques del desafio de la clase 12
 $sizeAbsolutoTexto: 40px;
+$colorRojo: #D62929;
+$colorRojoDos: #FF2A34;
+$colorOscuroUno:  #413446;
+$colorOscuroDos:  #2E2532;
+$colorOscuroTres:  #201A23;
 $colorOscuroNivelUno: #201A23 /*white*/;
+
 @mixin controlFlex ($display, $direction, $justifyContent, $alignItems) {
     display: $display;
     flex-direction: $direction;

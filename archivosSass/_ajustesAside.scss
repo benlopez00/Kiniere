@@ -10,7 +10,7 @@
             display: flex;
             justify-content: space-around;
             flex-direction: column;
-            background-color: #201A23;
+            background-color: $colorOscuroTres;
             width: 25vw;
             padding: 2vh 2vw;
             border-radius: 25px;
@@ -46,7 +46,7 @@
                 width: 10vw;
                 font-size: medium;
                 border-radius: 10px;
-                background-color: #413446;
+                background-color: $colorOscuroUno;
             }
             .dos{
                 border-radius: 0 0 27px 27px;
@@ -70,7 +70,7 @@
                 display: flex;
                 justify-content: space-around;
                 flex-direction: column;
-                background-color: #201A23;
+                background-color: $colorOscuroTres;
                 width: 300px;
                 padding: 15px;
                 margin: 15px;
@@ -115,7 +115,7 @@
                         width: 150px;
                         font-size: medium;
                         border-radius: 10px;
-                        background-color: #413446;
+                        background-color: $colorOscuroUno;
                     }
                     .dos{
                         border-radius: 0 0 27px 27px;

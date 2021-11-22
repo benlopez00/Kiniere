@@ -9,11 +9,11 @@
         .series__aside__titulo{
             font-family: 'Playfair Display', serif;
             font-weight: 700;
-            color: #FF2A34;
+            color: $colorRojoDos;
             font-size: 250%;
         }
         .series__aside__noticia{
-            background-color: #201A23;
+            background-color: $colorOscuroTres;
             width: 360px;
             padding: 2vh 2vw;
             margin: 2vh 0vw;
@@ -45,12 +45,12 @@
             .series__aside__titulo{
                 font-family: 'Playfair Display', serif;
                 font-weight: 700;
-                color: #FF2A34;
+                color: $colorRojoDos;
                 font-size: 250%;
                 margin: 15px;
             }
             .series__aside__noticia{
-                background-color: #201A23;
+                background-color: $colorOscuroTres;
                 @include dimension(200px,300px);
                 display: flex;
                 flex-direction: column;
@@ -77,16 +77,16 @@
         }
         .series__aside::-webkit-scrollbar{
             width: 12px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .series__aside::-webkit-scrollbar-track{
             -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.9);
             border-radius: 10px;
-            background-color: #2E2532;
+            background-color: $colorOscuroDos;
         }
         .series__aside::-webkit-scrollbar-thumb{
             border-radius: 10px;
-            background-color: #D62929;
+            background-color: $colorRojo;
             background-image: -webkit-linear-gradient(90deg,transparent,rgba(0, 0, 0, 0.4) 50%,transparent,transparent)
         }
     }
